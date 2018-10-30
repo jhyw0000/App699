@@ -1,0 +1,563 @@
+/**
+*   自定义样式
+*   @author:ertaoL
+*   @time:2017--7-5
+*/
+/*减少按钮两边的宽度，使扫码字体能够正常显示*/
+.x-button{
+    padding: .3em 0em;
+}
+/*去掉按钮部分显示样式*/
+.noBorder{
+    /*background-color:transparent !important;*/
+    background-color:#fff;
+    border-radius:0em;
+    /*border:none !important;*/
+    border: 1px solid #e6e6e6;
+    background-image:none !important;
+    background: #88ded2 !important;
+    border: #88ded2 !important;
+    z-index:0;/*控制主界面图标遮盖滑动页问题*/
+}
+/*主界面主菜单按钮样式*/
+.homepage {
+    background:url(../images/main/homepagen.png);
+    background-size: contain;
+    width: 50% !important;
+    height: 1.5em !important;
+}
+/*主界面退出按钮样式*/
+.backpage {
+    background:url(../images/main/signoutn.png);
+    background-size: contain;
+    width: 50% !important;
+    height: 1.5em !important;
+}
+/*主菜单按钮的样式*/
+.noBorderMainBtn{
+    /*background-color:transparent !important;*/
+    /*background-color:#fff;*/
+    /*border:none !important;*/
+    border-radius:0em;
+    /*border:1px solid #e6e6e6;*/
+    /*background-image:none !important;*/
+    background: #50d2c2 !important;
+    font-size: 0.6em;
+    font-color:black;
+}
+/*退出按钮的样式--添加左侧竖线*/
+.noBorderBackBtn{
+    /*background-color:transparent !important;*/
+    /*background-color:#fff;*/
+    /*border:none !important;*/
+    border-radius:0em;
+    /*border:1px solid #e6e6e6;*/
+    /*background-image:none !important;*/
+    background: #50d2c2 !important;
+    border-left: 1px solid #9a9a9a !important;
+    font-size: 0.6em;
+    color:black;
+}
+/*扫码按钮的默认样式*/
+.noBordersm{
+    background-color:transparent !important;
+    border:none !important;
+    background-image:none !important;
+}
+/*单个按钮的样式*/
+.mc1rn{
+    background:url(../images/main/warrantyclaim.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+.mc2rn{
+    background:url(../images/main/maintenancecompleted.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+.mc3rn{
+    background:url(../images/main/maintenancereminder.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+.mc4rn{
+    background:url(../images/main/maintenancecomplete.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+.mc5rn{
+    background:url(../images/main/informationservice.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*任务派工样式*/
+.rwpg{
+    background:url(../images/main/taskmaker.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*任务开工样式*/
+.rwkg{
+    background:url(../images/main/taskstart.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*任务执行样式*/
+.rwzx{
+    background:url(../images/main/taskexecution.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*完工汇报样式*/
+.wghb{
+    background:url(../images/main/completionreport.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*扫码图标样式*/
+.sm{
+    background:url(../images/sm1.png);
+    background-size: contain;
+    width: 90% !important;
+    height: 2em !important;
+}
+/*取消强制一行样式*/
+.nn{
+    word-wrap:break-word;
+    padding: 0.6em 0 0.6em 0;
+}
+/*没有计划日期的用红色显示*/
+redrow{
+    color: red;
+}
+/*主菜单界面的按钮样式*/
+.mainmenu{
+    color: black;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family:"Microsoft YaHei";
+    color: #7f7f7f;
+}
+.x-toolbar-dark {
+    background-image: -webkit-linear-gradient(top, #a6b0fd,#a6b0fd 3%,#a6b0fd);
+    background: #88ded2; */
+}
+.x-toolbar-dark.x-docked-top {
+    border-bottom-color: #ccc;
+}
+.bla{
+    background:red;
+}
+/*主界面图标上下边距，控制美观和字体位置*/
+.x-button .x-button-icon{
+    margin-top: 3px;
+    /*margin-bottom: 2px;*/
+    margin-bottom: -4px;
+}
+/*修改返回图标颜色*/
+.x-toolbar-dark .x-button, .x-toolbar-dark .x-button.x-button-back:after, .x-toolbar-dark .x-button.x-button-forward:after, .x-toolbar .x-toolbar-dark .x-button, .x-toolbar .x-toolbar-dark .x-button.x-button-back:after, .x-toolbar .x-toolbar-dark .x-button.x-button-forward:after, .x-toolbar-dark .x-field-select .x-component-outer, .x-toolbar-dark .x-field-select .x-component-outer.x-button-back:after, .x-toolbar-dark .x-field-select .x-component-outer.x-button-forward:after, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer.x-button-back:after, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer.x-button-forward:after {
+    background-image: -webkit-linear-gradient(top, #a6b0fd,#a6b0fd 3%,#a6b0fd);
+    background: #88ded2;
+}
+.x-toolbar-dark .x-button, .x-toolbar .x-toolbar-dark .x-button, .x-toolbar-dark .x-field-select .x-component-outer, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer {
+    border: 1px solid #a6b0fd;
+    border: #88ded2;
+}
+/*控制所有label字体的样式*/
+.x-form-label span {
+    font-weight: normal;
+}
+/*控制所有按钮不加粗*/
+.x-button-label, .x-badge, .x-hasbadge .x-badge {
+    font-weight: normal;
+}
+/*标题字体大小*/
+.x-title {
+    font-size: 1em;
+    font-weight: normal;
+}
+/*标题字体阴影 无阴影*/
+.x-toolbar-dark .x-title {
+    text-shadow: rgb(139, 129, 195) 0 -0.08em 0;
+}
+/*控制输入框label的左边框*/
+.x-label-align-left .x-form-label {
+    -webkit-border-top-left-radius: 0em;
+    border-top-left-radius: 0em;
+}
+/*向左箭头的图标颜色*/
+.x-toolbar-dark .x-button.x-button-back:before, .x-toolbar-dark .x-button.x-button-forward:before, .x-toolbar .x-toolbar-dark .x-button.x-button-back:before, .x-toolbar .x-toolbar-dark .x-button.x-button-forward:before, .x-toolbar-dark .x-field-select .x-component-outer.x-button-back:before, .x-toolbar-dark .x-field-select .x-component-outer.x-button-forward:before, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer.x-button-back:before, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer.x-button-forward:before {
+    background-image: -webkit-linear-gradient(top, #a6b0fd,#a6b0fd 3%,#a6b0fd);
+    background: #ffffff;
+}
+.x-button-pressing {
+
+}
+
+.x-body .x-inner .x-layout-card-item {
+    background: #fdfcfc;
+}
+
+.x-innerhtml .logo {
+    /*width: 208px;
+    height: 201px;*/
+    width: 165px;
+    height: 154px;
+    background-image: url(../images/login/logo1n.png);
+    float: left;
+}
+/*修改自适应问题  一车间小屏*/
+.x-innerhtml .logo2 {
+    width: 260px;
+    height: 25px;
+    /*width: 328px;
+    height: 34px;*/
+    background-image: url(../images/login/logo2n.png);
+    float: left;
+}
+
+.x-innerhtml .logo3 {
+    height: 17px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.x-component-outer .x-unsized {
+    border-bottom: 3px solid #f2f1f1;
+}
+
+.x-label-align-left:last-child .x-form-label {
+    background-color: #fdfcfc;
+}
+
+.x-form-label span center {
+    float: left;
+    color: #7f7f7f;
+}
+
+.x-stretched.x-container .x-form-label, .x-stretched.x-container .x-component-outer {
+    //display: initial !important;
+    padding: 0;
+}
+
+.x-container .x-inner .x-field.unp, .x-container .x-inner .x-field.unp input {
+    display: block !important;
+    background: #fdfcfc;
+}
+
+.x-innerhtml .or {
+    //width: 75px;
+    //height: 71px;
+    //background-image: url(../images/login/or.png);
+    //float: left;
+}
+
+.login {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    position: absolute;
+}
+
+.login1 {
+    margin: 3em 0px 0px !important;
+    background-image: url(../images/login/login1.png);
+    left: 10%;
+    z-index:0;
+}
+
+.login2 {
+    background-image: url(../images/login/login2.png);
+    right: 10%;
+    z-index:0;
+}
+
+.or {
+    position: absolute;
+    left: 50%;
+    margin-left: -37px;
+}
+
+.x-button-pressing.login2 {
+    background-image: url(../images/login/login2.png) !important;
+    background: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.x-button-pressing.login1 {
+    background-image: url(../images/login/login1.png) !important;
+    background: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.x-toolbar-dark .x-button.x-button-pressing {
+    background: #88ded2 !important;
+}
+/*修改解决列表页面数据宽度不够的问题001001001001*/
+.x-inner.x-scroll-scroller .x-container .x-inner {
+    width: 100%;
+    margin: auto;
+}
+.listcs {
+    width: 100%;
+    margin: auto;
+}
+.x-inner.x-scroll-scroller .x-container .x-inner .x-container .x-form-label, .x-inner.x-scroll-scroller .x-container .x-form-label {
+    text-align: center;
+    line-height: 2.5em;
+    background: #88ded2;
+    padding: 0;
+}
+
+.x-inner.x-scroll-scroller .x-container {
+    margin: auto;
+    margin-top: 0em;
+}
+
+.x-inner.x-scroll-scroller .x-container .x-form-label {
+    -moz-border-radius-topleft: 0.4em;
+    -webkit-border-top-left-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    -moz-border-radius-bottomleft: 0.4em;
+    -webkit-border-bottom-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+}
+
+.x-dock-body .x-container .x-inner .x-button-normal.noBorder, .x-dock-body .x-container .x-inner .x-container.noBorder {
+    border: 0 !important;
+    background: #fdfcfc !important;
+}
+
+.scgl, .sbgl {
+    text-align: center;
+    color: #7f7f7f;
+}
+
+.scgl .x-inner .x-innerhtml div, .sbgl .x-inner .x-innerhtml div {
+    background: #fdfcfc !important;
+}
+.x-msgbox {
+    border: 0.15em solid #50d2c2;
+}
+/*确定按钮背景颜色*/
+.x-button.x-button-action, .x-button.x-button-action.x-button-back:after, .x-button.x-button-action.x-button-forward:after, .x-toolbar .x-button.x-button-action, .x-toolbar .x-button.x-button-action.x-button-back:after, .x-toolbar .x-button.x-button-action.x-button-forward:after, .x-button.x-button-action-round, .x-button.x-button-action-round.x-button-back:after, .x-button.x-button-action-round.x-button-forward:after, .x-toolbar .x-button.x-button-action-round, .x-toolbar .x-button.x-button-action-round.x-button-back:after, .x-toolbar .x-button.x-button-action-round.x-button-forward:after, .x-button.x-button-action-small, .x-button.x-button-action-small.x-button-back:after, .x-button.x-button-action-small.x-button-forward:after, .x-toolbar .x-button.x-button-action-small, .x-toolbar .x-button.x-button-action-small.x-button-back:after, .x-toolbar .x-button.x-button-action-small.x-button-forward:after {
+    background-image: none;
+    background-color: #006bb6;
+    background-image: -webkit-linear-gradient(top, #88ded2,#88ded2 3%,#88ded2);
+}
+/*确定按钮边框颜色*/
+.x-button.x-button-action, .x-toolbar .x-button.x-button-action, .x-button.x-button-action-round, .x-toolbar .x-button.x-button-action-round, .x-button.x-button-action-small, .x-toolbar .x-button.x-button-action-small {
+    border: 1px solid #88ded2;
+}
+/*item列表选中框的样式*/
+.x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl {
+    background-image: none;
+    background-color: #91d2ba;
+    background-image: -webkit-linear-gradient(top, #e0e4e6,#91d2ba 3%,#b6e6d1);
+}
+.x-list-normal .x-list-item.x-item-selected.x-list-item-tpl, .x-list-normal .x-list-item.x-item-selected .x-dock-horizontal {
+    border-top-color: #16dec9;
+}
+/*解决扫描框中的label与其他输入框不对齐的情况*/
+.labcs {
+    width: 60% !important;
+}
+/*控制搜索框距离左侧的边距*/
+.x-field-search .x-field-input .x-form-field {
+    margin-left: 2em;
+}
+/*搜索边框样式*/
+.searchff {
+    -webkit-box-flex: 1;
+    flex: 1 0 0px;
+    border-radius: .4em;
+    border-top: 2px solid #f7f7f7;
+    border-left: 2px solid #f7f7f7;
+    border-right: 2px solid #f7f7f7;
+}
+.x-form-fieldset {
+    margin: .4em .1em 2em;
+}
+.x-field-search .x-field-input:before {
+    top: .6em;
+}
+/*******************************************app样式优化******************************************************************/
+/*列表中span字体样式*/
+.spa20 {
+    font-size: 0.6em;
+    width: 20%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占29%*/
+.spa29 {
+    font-size: 0.6em;
+    width: 29%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占26%*/
+.spa26 {
+    font-size: 0.6em;
+    width: 26%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占24%*/
+.spa24 {
+    font-size: 0.6em;
+    width: 24%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占22%*/
+.spa22 {
+    font-size: 0.6em;
+    width: 22%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占23%*/
+.spa23 {
+    font-size: 0.6em;
+    width: 23%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占21%*/
+.spa21 {
+    font-size: 0.6em;
+    width: 21%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占19%*/
+.spa19 {
+    font-size: 0.6em;
+    width: 19%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占16%*/
+.spa16 {
+    font-size: 0.6em;
+    width: 16%;
+    float: left;
+    word-wrap:break-word;
+}
+/*占12%*/
+.spa12 {
+    font-size: 0.6em;
+    width: 12%;
+    float: left;
+    word-wrap:break-word;
+}
+/*取消listitem的边距*/
+.x-list .x-list-item .x-list-item-body, .x-list .x-list-item.x-list-item-tpl .x-innerhtml {
+    padding: 3px 3px;
+}
+/*listitem中隐藏的样式*/
+.none{
+    display: none;
+}
+/*字体居左*/
+.fontleft{
+    text-align: left;
+}
+/*字体居中*/
+.fontcenter{
+    text-align: center;
+}
+/*字体居右*/
+.fontright{
+    text-align: right;
+}
+/*字体0.8em*/
+fontem8 {
+    font-size: 1em;
+}
+/*字体颜色*/
+.fontred {
+    color:red;
+}
+.fontblack {
+    color:black;
+}
+/*************************************一车间app新增样式*********************************************/
+.fontem7 {
+    font-size: 0.7em;
+}
+.ccc{
+    background: #c6c6c6;
+}
+.w30w{
+    width: 30%;
+}
+.w100w{
+    width: 100%;
+}
+/*订单接收样式*/
+.ddjs{
+    background:url(../images/main/ddjs.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*订单选择样式*/
+.ddxz{
+    background:url(../images/main/ddxz.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*订单选择样式*/
+.ddhb{
+    background:url(../images/main/ddhb.png);
+    background-size: contain;
+    width: 60% !important;
+    height: 2.7em !important;
+}
+/*订单汇报确定按钮样式*/
+.sureBtn{
+    /*background-color:#50d2c2;*/
+    background:#6ee4d5;
+    font-size: .8em;
+    border-radius:0em;
+    height:2.7em;
+    border-top:1px solid white;
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+/*增加魔狼的控件样式 -- 开始*/
+/*#region pick */
+
+.x-picker-slot-title {
+    height:auto;
+    text-align:center;
+    padding:0.2em 0;
+}
+.x-picker-slot .x-dataview-item {
+    padding:0 8px !important;
+}
+.x-webkit .x-layout-box.x-horizontal > .x-layout-box-item.x-picker-slot {
+    width:auto !important;
+}
+/*#endregion*/
+/*魔狼控件结束*/

@@ -1,0 +1,9 @@
+/*
+    App699的公共变量
+*/
+Ext.define('App699.config',{
+    alternateClassName: 'config',//别名，外部可直接引用
+    statics: {
+          baseUrl: 'http://10.0.0.29:8088'// IP  端口
+    }
+});
