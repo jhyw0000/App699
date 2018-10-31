@@ -43,10 +43,15 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "App699.controller.Logincon": [],
   "App699.controller.Main": [],
+  "App699.controller.RKQRQXcon": [],
   "App699.controller.RKQRcon": [],
   "App699.view.Login": [],
   "App699.view.Main": [],
+  "App699.view.ViewLYCK": [],
+  "App699.view.ViewLYCKSC": [],
   "App699.view.ViewRKQR": [],
+  "App699.view.ViewRKQRQX": [],
+  "App699.view.ViewYLTCDJ": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -682,6 +687,7 @@ Ext.ClassManager.addNameAliasMappings({
   "App699.config": [],
   "App699.controller.Logincon": [],
   "App699.controller.Main": [],
+  "App699.controller.RKQRQXcon": [],
   "App699.controller.RKQRcon": [],
   "App699.view.Login": [
     "widget.login"
@@ -689,8 +695,20 @@ Ext.ClassManager.addNameAliasMappings({
   "App699.view.Main": [
     "widget.main"
   ],
+  "App699.view.ViewLYCK": [
+    "widget.view3"
+  ],
+  "App699.view.ViewLYCKSC": [
+    "widget.view4"
+  ],
   "App699.view.ViewRKQR": [
     "widget.view1"
+  ],
+  "App699.view.ViewRKQRQX": [
+    "widget.view2"
+  ],
+  "App699.view.ViewYLTCDJ": [
+    "widget.view5"
   ],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],

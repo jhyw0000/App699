@@ -1,12 +1,12 @@
-Ext.define('App699.view.ViewRKQR', {
+Ext.define('App699.view.ViewLYCKSC', {
 	extend: 'Ext.Container',
-	xtype: 'view1',
+	xtype: 'view4',
 
     requires: [
         'Ext.field.Select','Ext.field.Hidden'
     ],
 	config: {
-		title: '入库确认',
+		title: '领用出库删除',
         scrollable: {
             direction: 'vertical'
         },
@@ -20,9 +20,9 @@ Ext.define('App699.view.ViewRKQR', {
             items: [
                 {
                     margin: '0 0 4px 0',
-                    id: 'view1id',
+                    id: 'view4id',
                     xtype: 'textfield',
-                    name : 'view1id',
+                    name : 'view4id',
                     label: 'ID号',
                     width: '100%'
                 }
@@ -36,20 +36,20 @@ Ext.define('App699.view.ViewRKQR', {
             items: [
                 {
                     margin: '0 0 4px 0',
-                    id: 'view1itemno',
+                    id: 'view4itemno',
                     xtype: 'textfield',
-                    name : 'view1itemno',
+                    name : 'view4itemno',
                     label: '物料编码',
                     placeHolder : '扫码输入',
                     width: '100%',
                     listeners: {
 //                    	focus: function(){
-//                    	    Ext.getCmp('view1eqmNum').setValue('');
+//                    	    Ext.getCmp('view4eqmNum').setValue('');
 //                    	},
                     	change: function(){
                     	      return false;
                     	      //下面要处理xml数据
-                    	      var eqmNum = Ext.getCmp('view1eqmNum').getValue();
+                    	      var eqmNum = Ext.getCmp('view4eqmNum').getValue();
                     	      var str=eqmNum;
                     	      if(str==null||""==str){
                     		    return;
@@ -90,9 +90,9 @@ Ext.define('App699.view.ViewRKQR', {
                                               Ext.Msg.alert('提示','此数据不存在！');
                                               return;
                                           }
-                                          Ext.getCmp('view1eqmNum').setValue(text.root[0].eqmNum);//设备编号
-                                          Ext.getCmp('view1eqmname').setValue(text.root[0].eqmName);//设备名称
-                                          Ext.getCmp('view1eqmtype').setValue(text.root[0].eqmType);//设备型号
+                                          Ext.getCmp('view4eqmNum').setValue(text.root[0].eqmNum);//设备编号
+                                          Ext.getCmp('view4eqmname').setValue(text.root[0].eqmName);//设备名称
+                                          Ext.getCmp('view4eqmtype').setValue(text.root[0].eqmType);//设备型号
                                       }else{
                                           Ext.Msg.alert('提示','查询失败，请重试！');
                                       }
@@ -113,9 +113,9 @@ Ext.define('App699.view.ViewRKQR', {
               items: [
                   {
                       margin: '0 0 4px 0',
-                      id: 'view1itemdesc',
+                      id: 'view4itemdesc',
                       xtype: 'textfield',
-                      name : 'view1itemdesc',
+                      name : 'view4itemdesc',
                       label: '物料说明',
                       width: '100%'
                   }]
@@ -127,9 +127,9 @@ Ext.define('App699.view.ViewRKQR', {
                   items: [
                       {
                           margin: '0 0 4px 0',
-                          id: 'view1unitofmeas',
+                          id: 'view4unitofmeas',
                           xtype: 'textfield',
-                          name : 'view1unitofmeas',
+                          name : 'view4unitofmeas',
                           label: '计量单位',
                           width: '100%'
                       }]
@@ -141,9 +141,9 @@ Ext.define('App699.view.ViewRKQR', {
                   items: [
                       {
                           margin: '0 0 4px 0',
-                          id: 'view1qty',
+                          id: 'view4qty',
                           xtype: 'textfield',
-                          name : 'view1qty',
+                          name : 'view4qty',
                           label: '数量',
                           labelCls: 'nn',
                           width: '100%'
@@ -157,9 +157,9 @@ Ext.define('App699.view.ViewRKQR', {
                  items: [
                      {
                          margin: '0 0 4px 0',
-                         id: 'view1vendordesc',
+                         id: 'view4vendordesc',
                          xtype: 'textfield',
-                         name : 'view1vendordesc',
+                         name : 'view4vendordesc',
                          label: '供应商名字',
                          labelCls: 'nn',
                          width: '100%'
@@ -173,10 +173,10 @@ Ext.define('App699.view.ViewRKQR', {
                items: [
                    {
                        margin: '0 0 4px 0',
-                       id: 'view1storelocation',
+                       id: 'view4manudate',
                        xtype: 'textfield',
-                       name : 'view1storelocation',
-                       label: '入库库房',
+                       name : 'view4manudate',
+                       label: '生产日期',
                        labelCls: 'nn',
                        width: '100%'
                    }
@@ -189,17 +189,49 @@ Ext.define('App699.view.ViewRKQR', {
                items: [
                    {
                        margin: '0 0 4px 0',
-                       id: 'view1qjw',
+                       id: 'view4validitydate',
                        xtype: 'textfield',
-                       name : 'view1qjw',
-                       label: '区架位',
+                       name : 'view4validitydate',
+                       label: '有效期',
+                       labelCls: 'nn',
+                       width: '100%'
+                   }
+               ]
+           },{
+               xtype: 'container',
+               margin: '0.5em 0 0 0',
+               layout: 'hbox',
+               width: '100%',
+               items: [
+                   {
+                       margin: '0 0 4px 0',
+                       id: 'view4outdepartmentdesc',
+                       xtype: 'textfield',
+                       name : 'view4outdepartmentdesc',
+                       label: '出库部门',
+                       labelCls: 'nn',
+                       width: '100%'
+                   }
+               ]
+           },{
+               xtype: 'container',
+               margin: '0.5em 0 0 0',
+               layout: 'hbox',
+               width: '100%',
+               items: [
+                   {
+                       margin: '0 0 4px 0',
+                       id: 'view4user',
+                       xtype: 'textfield',
+                       name : 'view4user',
+                       label: '领料人',
                        labelCls: 'nn',
                        width: '100%'
                    }
                ]
            },{
               xtype: 'container',
-              itemId: 'view1btn',
+              itemId: 'view4btn',
               style:'',
               docked: 'bottom',
               flex:1,

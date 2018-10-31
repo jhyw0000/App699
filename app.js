@@ -17,6 +17,7 @@ Ext.application({
     name: 'App699',
 
     requires: [
+        'App699.config',
         'Ext.MessageBox',
         'Ext.field.Password',
         'UX.viewport.Time',
@@ -29,13 +30,18 @@ Ext.application({
     views: [
         'Main',
         'Login',
-        'ViewRKQR'
+        'ViewRKQR',
+        'ViewRKQRQX',
+        'ViewLYCK',
+        'ViewLYCKSC',
+        'ViewYLTCDJ'
     ],
 
     controllers: [
         'Logincon',
         'Main',
-        'RKQRcon'
+        'RKQRcon',
+        'RKQRQXcon'
     ],
 
     icon: {
