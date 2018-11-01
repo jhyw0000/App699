@@ -1887,10 +1887,13 @@ Ext.ClassManager.addNameAlternateMappings({
   "App699.config": [
     "config"
   ],
+  "App699.controller.LYCKcon": [],
   "App699.controller.Logincon": [],
   "App699.controller.Main": [],
   "App699.controller.RKQRQXcon": [],
   "App699.controller.RKQRcon": [],
+  "App699.model.departmentModel": [],
+  "App699.store.departmentStore": [],
   "App699.view.Login": [],
   "App699.view.Main": [],
   "App699.view.ViewLYCK": [],
@@ -2531,10 +2534,13 @@ Ext.ClassManager.addNameAlternateMappings({
 
 Ext.ClassManager.addNameAliasMappings({
   "App699.config": [],
+  "App699.controller.LYCKcon": [],
   "App699.controller.Logincon": [],
   "App699.controller.Main": [],
   "App699.controller.RKQRQXcon": [],
   "App699.controller.RKQRcon": [],
+  "App699.model.departmentModel": [],
+  "App699.store.departmentStore": [],
   "App699.view.Login": [
     "widget.login"
   ],

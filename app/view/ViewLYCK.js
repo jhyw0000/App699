@@ -198,21 +198,34 @@ Ext.define('App699.view.ViewLYCK', {
                    }
                ]
            },{
-               xtype: 'container',
-               margin: '0.5em 0 0 0',
+               xtype: 'selectfield',
+               label: '出库部门',
+               id: 'view3outdepartmentdesc',
+               name : 'view3outdepartmentdesc',
                layout: 'hbox',
                width: '100%',
-               items: [
-                   {
-                       margin: '0 0 4px 0',
-                       id: 'view3outdepartmentdesc',
-                       xtype: 'textfield',
-                       name : 'view3outdepartmentdesc',
-                       label: '出库部门',
-                       labelCls: 'nn',
-                       width: '100%'
+               displayField: 'departmentDesc',
+               valueField: 'departmentCode',
+               store: 'departmentStore',
+               listeners: {
+                   change: function(){
                    }
-               ]
+               }
+//               xtype: 'container',
+//               margin: '0.5em 0 0 0',
+//               layout: 'hbox',
+//               width: '100%',
+//               items: [
+//                   {
+//                       margin: '0 0 4px 0',
+//                       id: 'view3outdepartmentdesc',
+//                       xtype: 'textfield',
+//                       name : 'view3outdepartmentdesc',
+//                       label: '出库部门',
+//                       labelCls: 'nn',
+//                       width: '100%'
+//                   }
+//               ]
            },{
                xtype: 'container',
                margin: '0.5em 0 0 0',

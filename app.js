@@ -26,7 +26,12 @@ Ext.application({
         'UX.viewport.FieldScroller'
 
     ],
-
+    models: [
+        'departmentModel'
+    ],
+    stores: [
+        'departmentStore'
+    ],
     views: [
         'Main',
         'Login',
@@ -41,7 +46,8 @@ Ext.application({
         'Logincon',
         'Main',
         'RKQRcon',
-        'RKQRQXcon'
+        'RKQRQXcon',
+        'LYCKcon'
     ],
 
     icon: {
