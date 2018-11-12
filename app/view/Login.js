@@ -44,6 +44,7 @@ Ext.define('App699.view.Login', {
                       name : 'username',
                       cls: 'unp',
                       label: '<center>账号</center>',
+                      value: 'zhao6',
                       listeners: {
                       	focus: function(){
                       	    Ext.getCmp('username').setValue('');
@@ -91,6 +92,7 @@ Ext.define('App699.view.Login', {
                       xtype: 'passwordfield',
                       name : 'userpwd',
                       cls: 'unp',
+                      value: 11,
                       label: '<center>密码</center>'
                   }
                 ]

@@ -13,7 +13,24 @@ Ext.define('App699.controller.RKQRcon', {
     //获取参数测试
     view1taskmaker: function(view){
         var app = this.getApplication();
-        var eqmNum = Ext.getCmp('view1eqmNum');//设备编号
+        var id = Ext.getCmp('view1id');//入库登记表id主键
+        if(id.getValue()==''||id.getValue()==null){
+            Ext.Msg.alert('提示','请扫描入库ID条码！');
+            return;
+        }
+        var qjw2 = Ext.getCmp('view1qjw2');//扫描区架位信息
+        if(qjw2.getValue()==''||qjw2.getValue()==null){
+            Ext.Msg.alert('提示','请扫描区架位条码信息！');
+            return;
+        }
+        var qjw = Ext.getCmp('view1qjw');//回写的区架位信息
+        if(qjw.getValue()!=qjw2.getValue()){
+            Ext.Msg.alert('提示','入库信息不一致，不能确认！');
+            return;
+        }
+        return false;
+
+
         if(eqmNum.getValue()==''||eqmNum.getValue()==null){
             Ext.Msg.alert('提示','员工编号不能为空');
             return;
