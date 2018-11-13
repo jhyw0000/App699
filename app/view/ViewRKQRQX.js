@@ -24,7 +24,44 @@ Ext.define('App699.view.ViewRKQRQX', {
                     xtype: 'textfield',
                     name : 'view2id',
                     label: 'ID号',
-                    width: '100%'
+                    placeHolder : '扫码输入',
+                    width: '100%',
+                    listeners: {
+                        focus: function(){
+                            Ext.getCmp('view2id').setValue('');
+                        },
+                        change: function(){
+                            var id = Ext.getCmp('view2id').getValue();
+                            if(id==null || id==""){
+                                return false;
+                            }
+                            Ext.Ajax.setTimeout(6000);
+                            Ext.Ajax.request({
+                                url: config.baseUrl+'/rkqr/query',
+                                useDefaultXhrHeader: false,
+                                withCredentials: true,
+                                method: 'get',
+                                params: {
+                                    transactionSeqNo: id
+                                },
+                                success: function(response){
+                                  var text = eval('('+response.responseText+')');
+                                  if(text.success){
+                                    Ext.getCmp('view2itemno').setValue(text.root[0].itemNo);//物料编号
+                                    Ext.getCmp('view2itemdesc').setValue(text.root[0].description);//物料说明
+                                    Ext.getCmp('view2unitofmeas').setValue(text.root[0].unitOfMeasure);//计量单位
+                                    Ext.getCmp('view2qty').setValue(text.root[0].transQty);//数量
+                                    Ext.getCmp('view2vendordesc').setValue(text.root[0].vendorName);//供应商名字
+                                    return;
+                                  }
+                                  Ext.Msg.alert('提示',text.msg);
+                              },
+                              failure: function(response){
+                                  Ext.Msg.alert('提示','查询异常，请重试！');
+                              }
+                          });
+                        }
+                    }
                 }
             ]
             },{
@@ -40,69 +77,7 @@ Ext.define('App699.view.ViewRKQRQX', {
                     xtype: 'textfield',
                     name : 'view2itemno',
                     label: '物料编码',
-                    placeHolder : '扫码输入',
-                    width: '100%',
-                    listeners: {
-//                    	focus: function(){
-//                    	    Ext.getCmp('view2eqmNum').setValue('');
-//                    	},
-                    	change: function(){
-                    	      return false;
-                    	      //下面要处理xml数据
-                    	      var eqmNum = Ext.getCmp('view2eqmNum').getValue();
-                    	      var str=eqmNum;
-                    	      if(str==null||""==str){
-                    		    return;
-                    	      }
-                    	      if(str.indexOf("?")==-1){
-                    		    return;
-                    	      }
-                    	      //创建文档对象
-                    	      var parser=new DOMParser();
-                    	      var xmlDoc=parser.parseFromString(str,"text/xml");
-
-                    	      //提取数据
-                    	      var countrys = xmlDoc.getElementsByTagName('CBH');
-                    	      var arr = [];
-
-                    	      for (var i = 0; i < countrys.length; i++) {
-                    		  arr.push(countrys[i].textContent);
-                    	      };
-                    	      this.setValue(arr[0]);
-                    	      //发送请求
-                              eqmNum = arr[0];
-                              if(eqmNum==null || eqmNum==''){
-                                  return;
-                              }
-                              Ext.Ajax.setTimeout(6000);
-                              Ext.Ajax.request({
-                                  url: config.baseUrl+'/emisht/model/app/eqm/EqmAccountHelpInfo.Find.find.action?checkUser=false',
-                                  useDefaultXhrHeader: false,
-                                  withCredentials: true,
-                                  method: 'get',
-                                  params: {
-                                      eqmNum: eqmNum
-                                  },
-                                  success: function(response){
-                                      var text = eval('('+response.responseText+')');
-                                      if(text.success){
-                                          if(text.root.length==null||text.root.length==''){
-                                              Ext.Msg.alert('提示','此数据不存在！');
-                                              return;
-                                          }
-                                          Ext.getCmp('view2eqmNum').setValue(text.root[0].eqmNum);//设备编号
-                                          Ext.getCmp('view2eqmname').setValue(text.root[0].eqmName);//设备名称
-                                          Ext.getCmp('view2eqmtype').setValue(text.root[0].eqmType);//设备型号
-                                      }else{
-                                          Ext.Msg.alert('提示','查询失败，请重试！');
-                                      }
-                                  },
-                                  failure: function(response){
-                                      Ext.Msg.alert('提示','查询异常，请重试！');
-                                  }
-                              });
-                    	  }
-                    }
+                    width: '100%'
                 }
             ]
             },{
@@ -174,7 +149,7 @@ Ext.define('App699.view.ViewRKQRQX', {
               layout: 'hbox',
               height: '8%',
               items: [{
-                  text:'报修',
+                  text:'入库确认取消',
                   xtype: 'button',
                   cls : 'noBorder',
                   ui: 'action',

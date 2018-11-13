@@ -27,9 +27,14 @@ Ext.define('App699.view.ViewRKQR', {
                     placeHolder : '扫码输入',
                     width: '100%',
                     listeners: {
+                        focus: function(){
+                    	    Ext.getCmp('view1id').setValue('');
+                    	},
                         change: function(){
-                            alert(1);
                             var id = Ext.getCmp('view1id').getValue();
+                            if(id==null || id==""){
+                                return false;
+                            }
                             Ext.Ajax.setTimeout(6000);
                             Ext.Ajax.request({
                                 url: config.baseUrl+'/rkqr/query',
@@ -49,7 +54,9 @@ Ext.define('App699.view.ViewRKQR', {
                                     Ext.getCmp('view1vendordesc').setValue(text.root[0].vendorName);//供应商名字
                                     Ext.getCmp('view1storelocation').setValue(text.root[0].toStoreCode);//入库库房
                                     Ext.getCmp('view1qjw').setValue(text.root[0].qjw);//区架位
+                                    return;
                                   }
+                                  Ext.Msg.alert('提示',text.msg);
                               },
                               failure: function(response){
                                   Ext.Msg.alert('提示','查询异常，请重试！');

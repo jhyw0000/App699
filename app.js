@@ -27,10 +27,12 @@ Ext.application({
 
     ],
     models: [
-        'departmentModel'
+        'departmentModel',
+        'empModel'
     ],
     stores: [
-        'departmentStore'
+        'departmentStore',
+        'empStore'
     ],
     views: [
         'Main',
@@ -47,7 +49,8 @@ Ext.application({
         'Main',
         'RKQRcon',
         'RKQRQXcon',
-        'LYCKcon'
+        'LYCKcon',
+        'LYCKSCcon'
     ],
 
     icon: {

@@ -24,12 +24,51 @@ Ext.define('App699.view.ViewLYCK', {
                     xtype: 'textfield',
                     name : 'view3id',
                     label: 'ID号',
-                    width: '100%'
+                    placeHolder : '扫码输入',
+                    width: '100%',
+                    listeners: {
+                        focus: function(){
+                            Ext.getCmp('view3id').setValue('');
+                        },
+                        change: function(){
+                            var id = Ext.getCmp('view3id').getValue();
+                            if(id==null || id==""){
+                                return false;
+                            }
+                            Ext.Ajax.setTimeout(6000);
+                            Ext.Ajax.request({
+                                url: config.baseUrl+'/lyck/query',
+                                useDefaultXhrHeader: false,
+                                withCredentials: true,
+                                method: 'get',
+                                params: {
+                                    transactionSeqNo: id
+                                },
+                                success: function(response){
+                                  var text = eval('('+response.responseText+')');
+                                  if(text.success){
+                                    Ext.getCmp('view3itemno').setValue(text.root[0].itemNo);//物料编号
+                                    Ext.getCmp('view3itemdesc').setValue(text.root[0].description);//物料说明
+                                    Ext.getCmp('view3unitofmeas').setValue(text.root[0].unitOfMeasure);//计量单位
+                                    Ext.getCmp('view3qty').setValue(text.root[0].transQty);//数量
+                                    Ext.getCmp('view3vendordesc').setValue(text.root[0].vendorName);//供应商名字
+                                    Ext.getCmp('view3manudate').setValue(text.root[0].makeDate);//生产日期
+                                    Ext.getCmp('view3validitydate').setValue(text.root[0].periodValidity);//有效期
+                                    return;
+                                  }
+                                  Ext.Msg.alert('提示',text.msg);
+                              },
+                              failure: function(response){
+                                  Ext.Msg.alert('提示','查询异常，请重试！');
+                              }
+                          });
+                        }
+                    }
                 }
             ]
             },{
             xtype: 'container',
-            margin: '0.5em 0 0 0',
+            margin: '0.01em 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
@@ -40,74 +79,12 @@ Ext.define('App699.view.ViewLYCK', {
                     xtype: 'textfield',
                     name : 'view3itemno',
                     label: '物料编码',
-                    placeHolder : '扫码输入',
-                    width: '100%',
-                    listeners: {
-//                    	focus: function(){
-//                    	    Ext.getCmp('view3eqmNum').setValue('');
-//                    	},
-                    	change: function(){
-                    	      return false;
-                    	      //下面要处理xml数据
-                    	      var eqmNum = Ext.getCmp('view3eqmNum').getValue();
-                    	      var str=eqmNum;
-                    	      if(str==null||""==str){
-                    		    return;
-                    	      }
-                    	      if(str.indexOf("?")==-1){
-                    		    return;
-                    	      }
-                    	      //创建文档对象
-                    	      var parser=new DOMParser();
-                    	      var xmlDoc=parser.parseFromString(str,"text/xml");
-
-                    	      //提取数据
-                    	      var countrys = xmlDoc.getElementsByTagName('CBH');
-                    	      var arr = [];
-
-                    	      for (var i = 0; i < countrys.length; i++) {
-                    		  arr.push(countrys[i].textContent);
-                    	      };
-                    	      this.setValue(arr[0]);
-                    	      //发送请求
-                              eqmNum = arr[0];
-                              if(eqmNum==null || eqmNum==''){
-                                  return;
-                              }
-                              Ext.Ajax.setTimeout(6000);
-                              Ext.Ajax.request({
-                                  url: config.baseUrl+'/emisht/model/app/eqm/EqmAccountHelpInfo.Find.find.action?checkUser=false',
-                                  useDefaultXhrHeader: false,
-                                  withCredentials: true,
-                                  method: 'get',
-                                  params: {
-                                      eqmNum: eqmNum
-                                  },
-                                  success: function(response){
-                                      var text = eval('('+response.responseText+')');
-                                      if(text.success){
-                                          if(text.root.length==null||text.root.length==''){
-                                              Ext.Msg.alert('提示','此数据不存在！');
-                                              return;
-                                          }
-                                          Ext.getCmp('view3eqmNum').setValue(text.root[0].eqmNum);//设备编号
-                                          Ext.getCmp('view3eqmname').setValue(text.root[0].eqmName);//设备名称
-                                          Ext.getCmp('view3eqmtype').setValue(text.root[0].eqmType);//设备型号
-                                      }else{
-                                          Ext.Msg.alert('提示','查询失败，请重试！');
-                                      }
-                                  },
-                                  failure: function(response){
-                                      Ext.Msg.alert('提示','查询异常，请重试！');
-                                  }
-                              });
-                    	  }
-                    }
+                    width: '100%'
                 }
             ]
             },{
               xtype: 'container',
-              margin: '0.5em 0 0 0',
+              margin: '0.01em 0 0 0',
               layout: 'hbox',
               width: '100%',
               items: [
@@ -121,7 +98,7 @@ Ext.define('App699.view.ViewLYCK', {
                   }]
               },{
                   xtype: 'container',
-                  margin: '0.5em 0 0 0',
+                  margin: '0.05em 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
@@ -135,7 +112,7 @@ Ext.define('App699.view.ViewLYCK', {
                       }]
                },{
                   xtype: 'container',
-                  margin: '0.5em 0 0 0',
+                  margin: '0.05em 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
@@ -151,7 +128,7 @@ Ext.define('App699.view.ViewLYCK', {
                   ]
               },{
                  xtype: 'container',
-                 margin: '0.5em 0 0 0',
+                 margin: '0.05em 0 0 0',
                  layout: 'hbox',
                  width: '100%',
                  items: [
@@ -167,7 +144,7 @@ Ext.define('App699.view.ViewLYCK', {
                  ]
              },{
                xtype: 'container',
-               margin: '0.5em 0 0 0',
+               margin: '0.05em 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
@@ -183,7 +160,7 @@ Ext.define('App699.view.ViewLYCK', {
                ]
            },{
                xtype: 'container',
-               margin: '0.5em 0 0 0',
+               margin: '0.05em 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
@@ -211,37 +188,36 @@ Ext.define('App699.view.ViewLYCK', {
                    change: function(){
                    }
                }
+           },{
+               margin: '0.1em 0 0 0',
+               xtype: 'selectfield',
+               label: '领料人',
+               id: 'view3user',
+               name : 'view3user',
+               layout: 'hbox',
+               width: '100%',
+               displayField: 'empName',
+               valueField: 'empNo',
+               store: 'empStore',
+               listeners: {
+                   change: function(){
+                   }
+               }
 //               xtype: 'container',
-//               margin: '0.5em 0 0 0',
+//               margin: '0.1em 0 0 0',
 //               layout: 'hbox',
 //               width: '100%',
 //               items: [
 //                   {
 //                       margin: '0 0 4px 0',
-//                       id: 'view3outdepartmentdesc',
+//                       id: 'view3user',
 //                       xtype: 'textfield',
-//                       name : 'view3outdepartmentdesc',
-//                       label: '出库部门',
+//                       name : 'view3user',
+//                       label: '领料人',
 //                       labelCls: 'nn',
 //                       width: '100%'
 //                   }
 //               ]
-           },{
-               xtype: 'container',
-               margin: '0.5em 0 0 0',
-               layout: 'hbox',
-               width: '100%',
-               items: [
-                   {
-                       margin: '0 0 4px 0',
-                       id: 'view3user',
-                       xtype: 'textfield',
-                       name : 'view3user',
-                       label: '领料人',
-                       labelCls: 'nn',
-                       width: '100%'
-                   }
-               ]
            },{
               xtype: 'container',
               itemId: 'view3btn',
@@ -251,7 +227,7 @@ Ext.define('App699.view.ViewLYCK', {
               layout: 'hbox',
               height: '8%',
               items: [{
-                  text:'报修',
+                  text:'确认',
                   xtype: 'button',
                   cls : 'noBorder',
                   ui: 'action',
