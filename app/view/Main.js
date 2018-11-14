@@ -48,8 +48,10 @@
                 items: [
                     {
                         action: '1',
+                        id: 'mainbtn1',
                         xtype: 'button',
-                        width: '25%',
+                        width: '33%',
+                        disabled: true,
                         text: '<span class="mainmenu">入库确认</span>',
                         ui: 'normal',
                         cls : 'noBorder',
@@ -59,8 +61,10 @@
                     },
                     {
                         action: '2',
+                        id: 'mainbtn2',
                         xtype: 'button',
-                        width: '25%',
+                        width: '33%',
+                        disabled: true,
                         text: '<span class="mainmenu">入库确认取消</span>',
                         ui: 'normal',
                         cls : 'noBorder',
@@ -70,25 +74,16 @@
                     },
                     {
                         action: '3',
+                        id: 'mainbtn3',
                         xtype: 'button',
-                        width: '25%',
+                        width: '33%',
+                        disabled: true,
                         text: '<span class="mainmenu">领用出库</span>',
                         ui: 'normal',
                         cls : 'noBorder',
                         iconAlign: 'top',
                         iconCls: 'mc2rn',
                         iconMask : true
-                     },
-                     {
-                         action: '4',
-                         xtype: 'button',
-                         width: '25%',
-                         text: '<span class="mainmenu">领用出库删除</span>',
-                         ui: 'normal',
-                         cls : 'noBorder',
-                         iconAlign: 'top',
-                         iconCls: 'mc1rn',
-                         iconMask : true
                      }
                        ]
             },{
@@ -98,9 +93,24 @@
                   margin: '1% 0 0 0',
                   items: [
                         {
+                             action: '4',
+                             id: 'mainbtn4',
+                             xtype: 'button',
+                             width: '33%',
+                             disabled: true,
+                             text: '<span class="mainmenu">领用出库删除</span>',
+                             ui: 'normal',
+                             cls : 'noBorder',
+                             iconAlign: 'top',
+                             iconCls: 'mc1rn',
+                             iconMask : true
+                         },
+                        {
                            action: '5',
+                           id: 'mainbtn5',
                            xtype: 'button',
-                           width: '25%',
+                           width: '33%',
+                           disabled: true,
                            text: '<span class="mainmenu">余料退库登记</span>',
                            ui: 'normal',
                            cls : 'noBorder',

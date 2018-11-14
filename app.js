@@ -50,7 +50,8 @@ Ext.application({
         'RKQRcon',
         'RKQRQXcon',
         'LYCKcon',
-        'LYCKSCcon'
+        'LYCKSCcon',
+        'YLTKDJcon'
     ],
 
     icon: {

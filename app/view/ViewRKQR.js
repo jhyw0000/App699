@@ -21,7 +21,7 @@ Ext.define('App699.view.ViewRKQR', {
                 {
                     margin: '0 0 4px 0',
                     id: 'view1id',
-                    xtype: 'textfield',
+                    xtype: 'numberfield',
                     name : 'view1id',
                     label: 'ID号',
                     placeHolder : '扫码输入',

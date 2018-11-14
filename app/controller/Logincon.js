@@ -46,6 +46,8 @@ Ext.define('App699.controller.Logincon', {
                 var text = eval('('+response.responseText+')');
                 if(text.success){
                     app.localStorage.setItem("userName",logId);
+                    //将用户权限信息添加到全局
+                    app.localStorage.setItem("auth",text.authroot);
                     //将用户名添加到main
                     var currUserName = Ext.getCmp('currUserName');
                     currUserName.setHtml('<span style="valign:bottom;font-size:0.8em;">当前用户：'+ text.root[0].EMPLOYEENAME +'</span>');

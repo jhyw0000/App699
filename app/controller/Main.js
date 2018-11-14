@@ -19,7 +19,10 @@ Ext.define('App699.controller.Main', {
             },
             'main container button[name=backBt]':{
                 tap: 'mainBackClick'
-            }
+            },
+            'main':{
+                initialize: 'maininitialize'
+             }
         }
     },
     openView: function (btn, e) {
@@ -29,6 +32,24 @@ Ext.define('App699.controller.Main', {
     		views = Ext.ComponentQuery.query(viewXType), //找已经存在的视图对象
     		view = (views.length > 0) ? views[0] : Ext.widget(viewXType);
     	main.push(view);
+    },
+    //根据权限 修改图标是否可点击
+    maininitialize:function(){
+        var app = this.getApplication();
+        var authstr = app.localStorage.getItem("auth");
+        var autharr = [];
+        if(authstr!=null && authstr!=""){
+            if(authstr.indexOf(",") > 0){
+                autharr = authstr.split(",");
+                for(var i=0;i<autharr.length;i++){
+                    if(Ext.getCmp("mainbtn"+autharr[i])){
+                        Ext.getCmp("mainbtn"+autharr[i]).setDisabled(false);
+                    }
+                }
+            }else{
+                Ext.getCmp(("mainbtn"+authstr)).setDisabled(false);
+            }
+        }
     },
     mainBackClick: function(){
         //先执行替换按钮文本显示
@@ -41,10 +62,7 @@ Ext.define('App699.controller.Main', {
                 login.pop(main);
                 var app = this.getApplication();
                 app.localStorage.setItem("userName","");
-                app.localStorage.setItem("departmentCode","");//部门编码
-                app.localStorage.setItem("clockNo","");//员工编号
-                app.localStorage.setItem("employeeName","");//员工姓名
-                app.localStorage.setItem("teamCode","");//员工班组
+                app.localStorage.setItem("auth","");
             }
         },this);
     }

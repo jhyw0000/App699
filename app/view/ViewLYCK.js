@@ -21,7 +21,7 @@ Ext.define('App699.view.ViewLYCK', {
                 {
                     margin: '0 0 4px 0',
                     id: 'view3id',
-                    xtype: 'textfield',
+                    xtype: 'numberfield',
                     name : 'view3id',
                     label: 'ID号',
                     placeHolder : '扫码输入',
