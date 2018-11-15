@@ -7,8 +7,17 @@ Ext.define('App699.controller.LYCKSCcon', {
         control: {
             'view4 container#view4btn button':{
                 tap: 'view4taskmaker'
-            }
+            },
+            'view4':{
+                initialize: 'view4initialize'
+             }
         }
+    },
+    //初始化输入框获取焦点
+    view4initialize:function(){
+        setTimeout(function(){
+            Ext.getCmp('view4id').focus();
+        },300);
     },
     //领用出库删除
     view4taskmaker: function(view){

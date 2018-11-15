@@ -7,8 +7,17 @@ Ext.define('App699.controller.YLTKDJcon', {
         control: {
             'view5 container#view5btn button':{
                 tap: 'view5taskmaker'
-            }
+            },
+            'view5':{
+                initialize: 'view5initialize'
+             }
         }
+    },
+    //初始化输入框获取焦点
+    view5initialize:function(){
+        setTimeout(function(){
+            Ext.getCmp('view5id').focus();
+        },300);
     },
     //退库登记确认
     view5taskmaker: function(view){

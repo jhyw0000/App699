@@ -7,8 +7,17 @@ Ext.define('App699.controller.RKQRQXcon', {
         control: {
             'view2 container#view2btn button':{
                 tap: 'view2taskmaker'
-            }
+            },
+            'view2':{
+                initialize: 'view2initialize'
+             }
         }
+    },
+    //初始化输入框获取焦点
+    view2initialize:function(){
+        setTimeout(function(){
+            Ext.getCmp('view2id').focus();
+        },300);
     },
     //入库确认取消
     view2taskmaker: function(view){

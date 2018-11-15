@@ -176,7 +176,7 @@ Ext.define('App699.view.ViewLYCK', {
                ]
            },{
                xtype: 'selectfield',
-               label: '出库部门',
+               label: '领用部门',
                id: 'view3outdepartmentdesc',
                name : 'view3outdepartmentdesc',
                layout: 'hbox',
@@ -186,6 +186,33 @@ Ext.define('App699.view.ViewLYCK', {
                store: 'departmentStore',
                listeners: {
                    change: function(){
+                        var departmentCode = this.getValue();
+                        if(departmentCode==null ||departmentCode==""){
+                            return;
+                        }
+                        Ext.Ajax.setTimeout(6000);
+                        Ext.Ajax.request({
+                            url: config.baseUrl+'/emp/list',
+                            useDefaultXhrHeader: false,
+                            withCredentials: true,
+                            method: 'post',
+                            params: {
+                                departmentCode:departmentCode
+                            },
+                            success: function(response){
+                                var text = eval('('+response.responseText+')');
+                                if(text.success){
+                                    //将分类信息填充到store的data中
+                                    var empStore = Ext.getCmp('view3user').getStore();
+                                    empStore.setData(text.root);
+                                    return;
+                                }
+                                Ext.Msg.alert('提示',text.msg);
+                            },
+                            failure: function(response){
+                                Ext.Msg.alert('提示','请求失败');
+                            }
+                        });
                    }
                }
            },{
@@ -203,21 +230,6 @@ Ext.define('App699.view.ViewLYCK', {
                    change: function(){
                    }
                }
-//               xtype: 'container',
-//               margin: '0.1em 0 0 0',
-//               layout: 'hbox',
-//               width: '100%',
-//               items: [
-//                   {
-//                       margin: '0 0 4px 0',
-//                       id: 'view3user',
-//                       xtype: 'textfield',
-//                       name : 'view3user',
-//                       label: '领料人',
-//                       labelCls: 'nn',
-//                       width: '100%'
-//                   }
-//               ]
            },{
               xtype: 'container',
               itemId: 'view3btn',

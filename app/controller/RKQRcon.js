@@ -7,8 +7,17 @@ Ext.define('App699.controller.RKQRcon', {
         control: {
             'view1 container#view1btn button':{
                 tap: 'view1taskmaker'
-            }
+            },
+            'view1':{
+                initialize: 'view1initialize'
+             }
         }
+    },
+    //初始化输入框获取焦点
+    view1initialize:function(){
+        setTimeout(function(){
+            Ext.getCmp('view1id').focus();
+        },300);
     },
     //入库确认
     view1taskmaker: function(view){
@@ -37,7 +46,7 @@ Ext.define('App699.controller.RKQRcon', {
             params: {
                 id:id.getValue(),
                 logId:app.localStorage.getItem("userName"),
-                type:"UPDATE"//调用存储 type表示入库确认操作！
+                type:"INSERT"//调用存储 type表示入库确认操作！
             },
             success: function(response){
                 var text = eval('('+response.responseText+')');

@@ -14,6 +14,10 @@ Ext.define('App699.controller.LYCKcon', {
         }
     },
     view3initialize:function(){
+        //输入框获取焦点
+        setTimeout(function(){
+            Ext.getCmp('view3id').focus();
+        },300);
         //初始化获取部门信息
         Ext.Ajax.setTimeout(6000);
         Ext.Ajax.request({
@@ -37,28 +41,28 @@ Ext.define('App699.controller.LYCKcon', {
                 Ext.Msg.alert('提示','请求失败');
             }
         });
-        Ext.Ajax.setTimeout(6000);
-        Ext.Ajax.request({
-            url: config.baseUrl+'/emp/list',
-            useDefaultXhrHeader: false,
-            withCredentials: true,
-            method: 'post',
-            params: {
-            },
-            success: function(response){
-                var text = eval('('+response.responseText+')');
-                if(text.success){
-                    //将分类信息填充到store的data中
-                    var empStore = Ext.getCmp('view3user').getStore();
-                    empStore.setData(text.root);
-                    return;
-                }
-                Ext.Msg.alert('提示',text.msg);
-            },
-            failure: function(response){
-                Ext.Msg.alert('提示','请求失败');
-            }
-        });
+//        Ext.Ajax.setTimeout(6000);
+//        Ext.Ajax.request({
+//            url: config.baseUrl+'/emp/list',
+//            useDefaultXhrHeader: false,
+//            withCredentials: true,
+//            method: 'post',
+//            params: {
+//            },
+//            success: function(response){
+//                var text = eval('('+response.responseText+')');
+//                if(text.success){
+//                    //将分类信息填充到store的data中
+//                    var empStore = Ext.getCmp('view3user').getStore();
+//                    empStore.setData(text.root);
+//                    return;
+//                }
+//                Ext.Msg.alert('提示',text.msg);
+//            },
+//            failure: function(response){
+//                Ext.Msg.alert('提示','请求失败');
+//            }
+//        });
     },
     //领用出库确认
     view3taskmaker: function(view){

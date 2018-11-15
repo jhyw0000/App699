@@ -158,22 +158,6 @@ Ext.define('App699.view.ViewYLTCDJ', {
                    }
                ]
            },{
-               xtype: 'container',
-               margin: '0.5em 0 0 0',
-               layout: 'hbox',
-               width: '100%',
-               items: [
-                   {
-                       margin: '0 0 4px 0',
-                       id: 'view5outno',
-                       xtype: 'textfield',
-                       name : 'view5outno',
-                       label: '出库流水号',
-                       labelCls: 'nn',
-                       width: '100%'
-                   }
-               ]
-           },{
               xtype: 'container',
               itemId: 'view5btn',
               style:'',
