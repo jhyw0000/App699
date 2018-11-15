@@ -79,6 +79,7 @@ Ext.define('App699.view.ViewLYCK', {
                     xtype: 'textfield',
                     name : 'view3itemno',
                     label: '物料编码',
+                    readOnly:true,
                     width: '100%'
                 }
             ]
@@ -94,6 +95,7 @@ Ext.define('App699.view.ViewLYCK', {
                       xtype: 'textfield',
                       name : 'view3itemdesc',
                       label: '物料说明',
+                      readOnly:true,
                       width: '100%'
                   }]
               },{
@@ -108,6 +110,7 @@ Ext.define('App699.view.ViewLYCK', {
                           xtype: 'textfield',
                           name : 'view3unitofmeas',
                           label: '计量单位',
+                          readOnly:true,
                           width: '100%'
                       }]
                },{
@@ -122,6 +125,7 @@ Ext.define('App699.view.ViewLYCK', {
                           xtype: 'textfield',
                           name : 'view3qty',
                           label: '数量',
+                          readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
                       }
@@ -138,6 +142,7 @@ Ext.define('App699.view.ViewLYCK', {
                          xtype: 'textfield',
                          name : 'view3vendordesc',
                          label: '供应商名字',
+                         readOnly:true,
                          labelCls: 'nn',
                          width: '100%'
                      }
@@ -154,6 +159,7 @@ Ext.define('App699.view.ViewLYCK', {
                        xtype: 'textfield',
                        name : 'view3manudate',
                        label: '生产日期',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }
@@ -170,6 +176,7 @@ Ext.define('App699.view.ViewLYCK', {
                        xtype: 'textfield',
                        name : 'view3validitydate',
                        label: '有效期',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }

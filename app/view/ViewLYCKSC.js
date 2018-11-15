@@ -81,6 +81,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                     xtype: 'textfield',
                     name : 'view4itemno',
                     label: '物料编码',
+                    readOnly:true,
                     width: '100%'
                 }
             ]
@@ -96,6 +97,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                       xtype: 'textfield',
                       name : 'view4itemdesc',
                       label: '物料说明',
+                      readOnly:true,
                       width: '100%'
                   }]
               },{
@@ -110,6 +112,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                           xtype: 'textfield',
                           name : 'view4unitofmeas',
                           label: '计量单位',
+                          readOnly:true,
                           width: '100%'
                       }]
                },{
@@ -124,6 +127,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                           xtype: 'textfield',
                           name : 'view4qty',
                           label: '数量',
+                          readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
                       }
@@ -140,6 +144,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                          xtype: 'textfield',
                          name : 'view4vendordesc',
                          label: '供应商名字',
+                         readOnly:true,
                          labelCls: 'nn',
                          width: '100%'
                      }
@@ -156,6 +161,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                        xtype: 'textfield',
                        name : 'view4manudate',
                        label: '生产日期',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }
@@ -172,6 +178,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                        xtype: 'textfield',
                        name : 'view4validitydate',
                        label: '有效期',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }
@@ -188,6 +195,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                        xtype: 'textfield',
                        name : 'view4outdepartmentdesc',
                        label: '出库部门',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }
@@ -204,6 +212,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                        xtype: 'textfield',
                        name : 'view4user',
                        label: '领料人',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }

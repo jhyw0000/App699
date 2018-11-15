@@ -37,7 +37,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                             }
                             Ext.Ajax.setTimeout(6000);
                             Ext.Ajax.request({
-                                url: config.baseUrl+'/lyck/query',
+                                url: config.baseUrl+'/tkdj/query',
                                 useDefaultXhrHeader: false,
                                 withCredentials: true,
                                 method: 'get',
@@ -78,6 +78,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                     xtype: 'textfield',
                     name : 'view5itemno',
                     label: '物料编码',
+                    readOnly:true,
                     width: '100%'
                 }
             ]
@@ -93,6 +94,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                       xtype: 'textfield',
                       name : 'view5itemdesc',
                       label: '物料说明',
+                      readOnly:true,
                       width: '100%'
                   }]
               },{
@@ -107,6 +109,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                           xtype: 'textfield',
                           name : 'view5unitofmeas',
                           label: '计量单位',
+                          readOnly:true,
                           width: '100%'
                       }]
                },{
@@ -121,6 +124,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                           xtype: 'textfield',
                           name : 'view5qty',
                           label: '数量',
+                          readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
                       }
@@ -137,6 +141,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                          xtype: 'textfield',
                          name : 'view5vendordesc',
                          label: '供应商名字',
+                         readOnly:true,
                          labelCls: 'nn',
                          width: '100%'
                      }
@@ -153,6 +158,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                        xtype: 'textfield',
                        name : 'view5indepartmentdesc',
                        label: '入库部门',
+                       readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
                    }

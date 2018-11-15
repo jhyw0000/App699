@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30086905-4984-4cab-9be3-828b9d1460bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.js" afterPath="$PROJECT_DIR$/app/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/LYCKSCcon.js" afterPath="$PROJECT_DIR$/app/controller/LYCKSCcon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/LYCKcon.js" afterPath="$PROJECT_DIR$/app/controller/LYCKcon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RKQRQXcon.js" afterPath="$PROJECT_DIR$/app/controller/RKQRQXcon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RKQRcon.js" afterPath="$PROJECT_DIR$/app/controller/RKQRcon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/YLTKDJcon.js" afterPath="$PROJECT_DIR$/app/controller/YLTKDJcon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ViewLYCK.js" afterPath="$PROJECT_DIR$/app/view/ViewLYCK.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ViewLYCKSC.js" afterPath="$PROJECT_DIR$/app/view/ViewLYCKSC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ViewRKQR.js" afterPath="$PROJECT_DIR$/app/view/ViewRKQR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ViewRKQRQX.js" afterPath="$PROJECT_DIR$/app/view/ViewRKQRQX.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ViewYLTCDJ.js" afterPath="$PROJECT_DIR$/app/view/ViewYLTCDJ.js" />
     </list>
     <ignored path="App699.iws" />
@@ -30,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/Main.js">
+      <file leaf-file-name="ViewLYCKSC.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/ViewLYCKSC.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-113">
-              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state relative-caret-position="25">
+              <caret line="214" column="37" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewYLTCDJ.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/ViewYLTCDJ.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -60,31 +66,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RKQRcon.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RKQRcon.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
               <caret line="20" column="6" selection-start-line="15" selection-start-column="4" selection-end-line="20" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewRKQRQX.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/ViewRKQRQX.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -100,21 +96,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewYLTCDJ.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/ViewYLTCDJ.js">
+      <file leaf-file-name="ViewRKQR.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/ViewRKQR.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="160" column="33" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="33" />
+            <state relative-caret-position="25">
+              <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YLTKDJcon.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YLTKDJcon.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/YLTKDJcon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="75">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -123,8 +119,8 @@
       <file leaf-file-name="ViewLYCK.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/ViewLYCK.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="199" column="61" selection-start-line="199" selection-start-column="61" selection-end-line="199" selection-end-column="61" />
+            <state relative-caret-position="100">
+              <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -156,20 +152,20 @@
         <option value="$PROJECT_DIR$/app/model/empModel.js" />
         <option value="$PROJECT_DIR$/app/store/empStore.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/view/ViewRKQR.js" />
-        <option value="$PROJECT_DIR$/app/view/ViewRKQRQX.js" />
-        <option value="$PROJECT_DIR$/app/view/ViewLYCKSC.js" />
         <option value="$PROJECT_DIR$/app/controller/Logincon.js" />
         <option value="$PROJECT_DIR$/app/view/Main.js" />
         <option value="$PROJECT_DIR$/app/controller/Main.js" />
         <option value="$PROJECT_DIR$/app/config.js" />
-        <option value="$PROJECT_DIR$/app/view/ViewYLTCDJ.js" />
-        <option value="$PROJECT_DIR$/app/view/ViewLYCK.js" />
         <option value="$PROJECT_DIR$/app/controller/RKQRcon.js" />
         <option value="$PROJECT_DIR$/app/controller/RKQRQXcon.js" />
         <option value="$PROJECT_DIR$/app/controller/LYCKcon.js" />
         <option value="$PROJECT_DIR$/app/controller/LYCKSCcon.js" />
         <option value="$PROJECT_DIR$/app/controller/YLTKDJcon.js" />
+        <option value="$PROJECT_DIR$/app/view/ViewRKQR.js" />
+        <option value="$PROJECT_DIR$/app/view/ViewRKQRQX.js" />
+        <option value="$PROJECT_DIR$/app/view/ViewLYCK.js" />
+        <option value="$PROJECT_DIR$/app/view/ViewLYCKSC.js" />
+        <option value="$PROJECT_DIR$/app/view/ViewYLTCDJ.js" />
       </list>
     </option>
   </component>
@@ -604,7 +600,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -612,7 +608,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.400838" sideWeight="0.50253487" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44972068" sideWeight="0.49746513" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44972068" sideWeight="0.49746513" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19264892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -890,30 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ViewRKQR.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ViewRKQRQX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ViewLYCKSC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -954,26 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ViewYLTCDJ.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="160" column="33" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-113">
           <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ViewLYCK.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="199" column="61" selection-start-line="199" selection-start-column="61" selection-end-line="199" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1012,8 +968,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/YLTKDJcon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="75">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ViewRKQR.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ViewRKQRQX.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ViewLYCK.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ViewLYCKSC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="214" column="37" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ViewYLTCDJ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
           <folding />
         </state>
       </provider>

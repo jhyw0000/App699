@@ -77,6 +77,7 @@ Ext.define('App699.view.ViewRKQRQX', {
                     xtype: 'textfield',
                     name : 'view2itemno',
                     label: '物料编码',
+                    readOnly:true,
                     width: '100%'
                 }
             ]
@@ -92,6 +93,7 @@ Ext.define('App699.view.ViewRKQRQX', {
                       xtype: 'textfield',
                       name : 'view2itemdesc',
                       label: '物料说明',
+                      readOnly:true,
                       width: '100%'
                   }]
               },{
@@ -106,6 +108,7 @@ Ext.define('App699.view.ViewRKQRQX', {
                           xtype: 'textfield',
                           name : 'view2unitofmeas',
                           label: '计量单位',
+                          readOnly:true,
                           width: '100%'
                       }]
                },{
@@ -120,6 +123,7 @@ Ext.define('App699.view.ViewRKQRQX', {
                           xtype: 'textfield',
                           name : 'view2qty',
                           label: '数量',
+                          readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
                       }
@@ -136,6 +140,7 @@ Ext.define('App699.view.ViewRKQRQX', {
                          xtype: 'textfield',
                          name : 'view2vendordesc',
                          label: '供应商名字',
+                         readOnly:true,
                          labelCls: 'nn',
                          width: '100%'
                      }
