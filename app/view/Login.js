@@ -14,9 +14,9 @@ Ext.define('App699.view.Login', {
             },
             items:[{
                 xtype:'panel',
-                margin: '2em 1em 0.5em 1em',
-                style: '',
-                html: '<span class="logo"></span>'
+                margin: '5em 1em 0.5em 1em',
+                style: ''
+                //html: '<span class="logo"></span>'
             },{
                 xtype:'panel',
                 margin: '0 0em 0 0em',
@@ -44,7 +44,7 @@ Ext.define('App699.view.Login', {
                       name : 'username',
                       cls: 'unp',
                       label: '<center>账号</center>',
-                      value: 'zhao6',
+                      value: '',
                       listeners: {
                       	focus: function(){
                       	    Ext.getCmp('username').setValue('');
@@ -92,17 +92,41 @@ Ext.define('App699.view.Login', {
                       xtype: 'passwordfield',
                       name : 'userpwd',
                       cls: 'unp',
-                      value: 11,
+                      value:'',
                       label: '<center>密码</center>'
                   }
                 ]
+              },{
+                margin: '1em 0 0 0',
+                xtype: 'checkboxfield',
+                labelWidth:"50%",
+                id:'remember',
+                labelAlign:'right',
+                labelWrap: true,
+                name : 'remember',
+                label: '记录用户<br/>&密码',
+                style:'width:40%;text-align:center;',
+                value:false,
+                checked: false,
+                listeners:{
+                    check:{
+                        fn:function(){
+                            this.setValue(true);
+                        }
+                    },
+                    uncheck:{
+                        fn:function(){
+                            this.setValue(false);
+                        }
+                    }
+                }
               },{
                 xtype:'button',
                 text: '',
                 width: '35%',
                 height: '6%',
                 cls: 'login login1',
-                margin: '1.5em 0 0 0',
+                margin: '0.5em 0 0 0',
                 name: 'pwdlogin'
             },{
                 xtype:'panel',
@@ -112,7 +136,7 @@ Ext.define('App699.view.Login', {
                     pack:'center',
                     align: 'center'
                 },
-                margin: '1.5em 0 0 0',
+                margin: '0.5em 0 0 0',
                 html: '<span class="or"></span>'
             },{
                 text:'',
@@ -120,7 +144,7 @@ Ext.define('App699.view.Login', {
                 height: '6%',
                 xtype: 'button',
                 cls: 'login login2',
-                margin: '1.5em 0 0 0',
+                margin: '0.5em 0 0 0',
                 name: 'barlogin'
             }]
          }]

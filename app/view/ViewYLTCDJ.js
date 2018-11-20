@@ -3,7 +3,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
 	xtype: 'view5',
 
     requires: [
-        'Ext.field.Select','Ext.field.Hidden'
+        'Ext.field.Number'
     ],
 	config: {
 		title: '余料退库登记',
@@ -53,6 +53,7 @@ Ext.define('App699.view.ViewYLTCDJ', {
                                     Ext.getCmp('view5qty').setValue(text.root[0].transQty);//数量
                                     Ext.getCmp('view5vendordesc').setValue(text.root[0].vendorName);//供应商名字
                                     Ext.getCmp('view5indepartmentdesc').setValue(text.root[0].fromStoreCode);//入库部门
+                                    Ext.getCmp('view5outid').setValue(text.root[0].transactionSeqNo);//出库流水号
                                     return
                                   }
                                   Ext.Msg.alert('提示',text.msg);
@@ -158,6 +159,23 @@ Ext.define('App699.view.ViewYLTCDJ', {
                        xtype: 'textfield',
                        name : 'view5indepartmentdesc',
                        label: '入库部门',
+                       readOnly:true,
+                       labelCls: 'nn',
+                       width: '100%'
+                   }
+               ]
+           },{
+               xtype: 'container',
+               margin: '0.5em 0 0 0',
+               layout: 'hbox',
+               width: '100%',
+               items: [
+                   {
+                       margin: '0 0 4px 0',
+                       id: 'view5outid',
+                       xtype: 'textfield',
+                       name : 'view5outid',
+                       label: '出库流水号',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'

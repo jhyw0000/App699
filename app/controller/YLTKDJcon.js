@@ -48,6 +48,7 @@ Ext.define('App699.controller.YLTKDJcon', {
                     Ext.getCmp('view5qty').setValue('');//数量
                     Ext.getCmp('view5vendordesc').setValue('');//供应商名字
                     Ext.getCmp('view5indepartmentdesc').setValue('');//入库部门
+                    Ext.getCmp('view5outid').setValue('');//出库流水号
                     return;
                 }
                 Ext.Msg.alert('提示',text.msg);

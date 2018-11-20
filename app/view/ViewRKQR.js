@@ -3,7 +3,7 @@ Ext.define('App699.view.ViewRKQR', {
 	xtype: 'view1',
 
     requires: [
-        'Ext.field.Select','Ext.field.Hidden'
+        'Ext.field.Number'
     ],
 	config: {
 		title: '入库确认',

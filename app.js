@@ -41,7 +41,8 @@ Ext.application({
         'ViewRKQRQX',
         'ViewLYCK',
         'ViewLYCKSC',
-        'ViewYLTCDJ'
+        'ViewYLTCDJ',
+        'ViewConfig'
     ],
 
     controllers: [
@@ -51,7 +52,8 @@ Ext.application({
         'RKQRQXcon',
         'LYCKcon',
         'LYCKSCcon',
-        'YLTKDJcon'
+        'YLTKDJcon',
+        'Configcon'
     ],
 
     icon: {

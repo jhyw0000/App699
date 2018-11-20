@@ -53,6 +53,7 @@ Ext.define('App699.controller.LYCKSCcon', {
                     Ext.getCmp('view4validitydate').setValue('');//有效期
                     Ext.getCmp('view4outdepartmentdesc').setValue('');//出库部门
                     Ext.getCmp('view4user').setValue('');//领料人
+                    Ext.getCmp('view4outid').setValue('');//出库流水号
                     return;
                 }
                 Ext.Msg.alert('提示',text.msg);

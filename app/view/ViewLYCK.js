@@ -3,7 +3,7 @@ Ext.define('App699.view.ViewLYCK', {
 	xtype: 'view3',
 
     requires: [
-        'Ext.field.Select','Ext.field.Hidden'
+        'Ext.field.Select','Ext.field.Hidden','Ext.field.Number'
     ],
 	config: {
 		title: '领用出库',
@@ -232,11 +232,7 @@ Ext.define('App699.view.ViewLYCK', {
                width: '100%',
                displayField: 'empName',
                valueField: 'empNo',
-               store: 'empStore',
-               listeners: {
-                   change: function(){
-                   }
-               }
+               store: 'empStore'
            },{
               xtype: 'container',
               itemId: 'view3btn',

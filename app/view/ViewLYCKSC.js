@@ -3,7 +3,7 @@ Ext.define('App699.view.ViewLYCKSC', {
 	xtype: 'view4',
 
     requires: [
-        'Ext.field.Select','Ext.field.Hidden'
+        'Ext.field.Number'
     ],
 	config: {
 		title: '领用出库删除',
@@ -37,7 +37,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                             }
                             Ext.Ajax.setTimeout(6000);
                             Ext.Ajax.request({
-                                url: config.baseUrl+'/lyck/query',
+                                url: config.baseUrl+'/lycksc/query',
                                 useDefaultXhrHeader: false,
                                 withCredentials: true,
                                 method: 'get',
@@ -56,6 +56,7 @@ Ext.define('App699.view.ViewLYCKSC', {
                                     Ext.getCmp('view4validitydate').setValue(text.root[0].periodValidity);//有效期
                                     Ext.getCmp('view4outdepartmentdesc').setValue(text.root[0].fromStoreCode);//出库部门
                                     Ext.getCmp('view4user').setValue(text.root[0].createUser);//领料人
+                                    Ext.getCmp('view4outid').setValue(text.root[0].transactionSeqNo);//出库流水号
                                     return
                                   }
                                   Ext.Msg.alert('提示',text.msg);
@@ -212,6 +213,23 @@ Ext.define('App699.view.ViewLYCKSC', {
                        xtype: 'textfield',
                        name : 'view4user',
                        label: '领料人',
+                       readOnly:true,
+                       labelCls: 'nn',
+                       width: '100%'
+                   }
+               ]
+           },{
+               xtype: 'container',
+               margin: '0.05em 0 0 0',
+               layout: 'hbox',
+               width: '100%',
+               items: [
+                   {
+                       margin: '0 0 4px 0',
+                       id: 'view4outid',
+                       xtype: 'textfield',
+                       name : 'view4outid',
+                       label: '出库流水号',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
