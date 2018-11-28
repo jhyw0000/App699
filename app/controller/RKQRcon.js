@@ -10,8 +10,14 @@ Ext.define('App699.controller.RKQRcon', {
             },
             'view1':{
                 initialize: 'view1initialize'
-             }
+             },
+             'view1 textfield[name=view1qjw2]':{
+                 change: 'autosubmit'
+              }
         }
+    },
+    autosubmit:function(){
+        console.log(1);
     },
     //初始化输入框获取焦点
     view1initialize:function(){
