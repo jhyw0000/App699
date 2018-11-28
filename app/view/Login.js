@@ -14,7 +14,7 @@ Ext.define('App699.view.Login', {
             },
             items:[{
                 xtype:'panel',
-                margin: '5em 1em 0.5em 1em',
+                margin: '1em 1em 0.5em 1em',
                 style: '',
                 html: '<span class="logo"></span>'
             },{

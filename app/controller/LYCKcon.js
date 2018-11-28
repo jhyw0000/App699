@@ -91,6 +91,7 @@ Ext.define('App699.controller.LYCKcon', {
             params: {
                 id:id.getValue(),
                 empNo:empNo.getValue(),
+                logId:app.localStorage.getItem("userName"),
                 type:"INSERT",//调用存储 type表示入库出库确认操作！
                 outStore:outdepartment.getValue()
             },

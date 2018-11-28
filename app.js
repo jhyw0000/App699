@@ -54,6 +54,7 @@ Ext.application({
         'LYCKSCcon',
         'YLTKDJcon',
         'Configcon'
+//        'Pickcon'
     ],
 
     icon: {
@@ -210,7 +211,7 @@ Ext.application({
     },
     //汉化
     langZh:function(){
-        //Ext.Msg.alert('提示','进入汉化函数');
+//        Ext.Msg.alert('提示','进入汉化函数');
         if ((navigator.language || navigator.systemLanguage || navigator.userLanguage).split('-')[0] === 'zh') {
             Ext.Date.monthNames = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'];
             Ext.Date.monthNumbers = {

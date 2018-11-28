@@ -13,17 +13,19 @@ Ext.define('App699.view.ViewLYCKSC', {
         directionLock: true,
 		items: [{
             xtype: 'container',
-            margin: '6% 0 0 0',
+            margin: '1px 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
             items: [
                 {
-                    margin: '0 0 4px 0',
+                    margin: '0 0 1px 0',
                     id: 'view4id',
                     xtype: 'numberfield',
                     name : 'view4id',
                     label: 'ID号',
+                    labelWidth:'22%',
+                    labelCls:'labelwhite',
                     placeHolder : '扫码输入',
                     width: '100%',
                     listeners: {
@@ -71,63 +73,70 @@ Ext.define('App699.view.ViewLYCKSC', {
             ]
             },{
             xtype: 'container',
-            margin: '0.05em 0 0 0',
+            margin: '0 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
             items: [
                 {
-                    margin: '0 0 4px 0',
+                    margin: '0 0 1px 0',
                     id: 'view4itemno',
                     xtype: 'textfield',
                     name : 'view4itemno',
                     label: '物料编码',
+                    labelWidth:'22%',
+                    labelCls:'labelwhite',
                     readOnly:true,
                     width: '100%'
                 }
             ]
             },{
               xtype: 'container',
-              margin: '0.05em 0 0 0',
+              margin: '0 0 0 0',
               layout: 'hbox',
               width: '100%',
               items: [
                   {
-                      margin: '0 0 4px 0',
+                      margin: '0 0 1px 0',
                       id: 'view4itemdesc',
                       xtype: 'textfield',
                       name : 'view4itemdesc',
                       label: '物料说明',
+                      labelWidth:'22%',
+                      labelCls:'labelwhite',
                       readOnly:true,
                       width: '100%'
                   }]
               },{
                   xtype: 'container',
-                  margin: '0.05em 0 0 0',
+                  margin: '0 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
                       {
-                          margin: '0 0 4px 0',
+                          margin: '0 0 1px 0',
                           id: 'view4unitofmeas',
                           xtype: 'textfield',
                           name : 'view4unitofmeas',
                           label: '计量单位',
+                          labelWidth:'22%',
+                          labelCls:'labelwhite',
                           readOnly:true,
                           width: '100%'
                       }]
                },{
                   xtype: 'container',
-                  margin: '0.05em 0 0 0',
+                  margin: '0 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
                       {
-                          margin: '0 0 4px 0',
+                          margin: '0 0 1px 0',
                           id: 'view4qty',
                           xtype: 'textfield',
                           name : 'view4qty',
                           label: '数量',
+                          labelWidth:'22%',
                           readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
@@ -135,16 +144,17 @@ Ext.define('App699.view.ViewLYCKSC', {
                   ]
               },{
                  xtype: 'container',
-                 margin: '0.05em 0 0 0',
+                 margin: '0 0 0 0',
                  layout: 'hbox',
                  width: '100%',
                  items: [
                      {
-                         margin: '0 0 4px 0',
+                         margin: '0 0 1px 0',
                          id: 'view4vendordesc',
                          xtype: 'textfield',
                          name : 'view4vendordesc',
-                         label: '供应商名字',
+                         label: '供应商',
+                         labelWidth:'22%',
                          readOnly:true,
                          labelCls: 'nn',
                          width: '100%'
@@ -152,16 +162,17 @@ Ext.define('App699.view.ViewLYCKSC', {
                  ]
              },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view4manudate',
                        xtype: 'textfield',
                        name : 'view4manudate',
                        label: '生产日期',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
@@ -169,16 +180,17 @@ Ext.define('App699.view.ViewLYCKSC', {
                ]
            },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view4validitydate',
                        xtype: 'textfield',
                        name : 'view4validitydate',
                        label: '有效期',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
@@ -186,16 +198,17 @@ Ext.define('App699.view.ViewLYCKSC', {
                ]
            },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view4outdepartmentdesc',
                        xtype: 'textfield',
                        name : 'view4outdepartmentdesc',
                        label: '出库部门',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
@@ -203,16 +216,17 @@ Ext.define('App699.view.ViewLYCKSC', {
                ]
            },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view4user',
                        xtype: 'textfield',
                        name : 'view4user',
                        label: '领料人',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
@@ -220,16 +234,17 @@ Ext.define('App699.view.ViewLYCKSC', {
                ]
            },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view4outid',
                        xtype: 'textfield',
                        name : 'view4outid',
                        label: '出库流水号',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'

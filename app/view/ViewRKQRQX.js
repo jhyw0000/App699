@@ -13,17 +13,19 @@ Ext.define('App699.view.ViewRKQRQX', {
         directionLock: true,
 		items: [{
             xtype: 'container',
-            margin: '6% 0 0 0',
+            margin: '1px 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
             items: [
                 {
-                    margin: '0 0 4px 0',
+                    margin: '0 0 1px 0',
                     id: 'view2id',
                     xtype: 'numberfield',
                     name : 'view2id',
                     label: 'ID号',
+                    labelWidth:'22%',
+                    labelCls:'labelwhite',
                     placeHolder : '扫码输入',
                     width: '100%',
                     listeners: {
@@ -66,63 +68,70 @@ Ext.define('App699.view.ViewRKQRQX', {
             ]
             },{
             xtype: 'container',
-            margin: '0.5em 0 0 0',
+            margin: '0 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
             items: [
                 {
-                    margin: '0 0 4px 0',
+                    margin: '0 0 1px 0',
                     id: 'view2itemno',
                     xtype: 'textfield',
                     name : 'view2itemno',
                     label: '物料编码',
+                    labelWidth:'22%',
+                    labelCls:'labelwhite',
                     readOnly:true,
                     width: '100%'
                 }
             ]
             },{
               xtype: 'container',
-              margin: '0.5em 0 0 0',
+              margin: '0 0 0 0',
               layout: 'hbox',
               width: '100%',
               items: [
                   {
-                      margin: '0 0 4px 0',
+                      margin: '0 0 1px 0',
                       id: 'view2itemdesc',
                       xtype: 'textfield',
                       name : 'view2itemdesc',
                       label: '物料说明',
+                      labelWidth:'22%',
+                      labelCls:'labelwhite',
                       readOnly:true,
                       width: '100%'
                   }]
               },{
                   xtype: 'container',
-                  margin: '0.5em 0 0 0',
+                  margin: '0 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
                       {
-                          margin: '0 0 4px 0',
+                          margin: '0 0 1px 0',
                           id: 'view2unitofmeas',
                           xtype: 'textfield',
                           name : 'view2unitofmeas',
                           label: '计量单位',
+                          labelWidth:'22%',
+                          labelCls:'labelwhite',
                           readOnly:true,
                           width: '100%'
                       }]
                },{
                   xtype: 'container',
-                  margin: '0.5em 0 0 0',
+                  margin: '0 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
                       {
-                          margin: '0 0 4px 0',
+                          margin: '0 0 1px 0',
                           id: 'view2qty',
                           xtype: 'textfield',
                           name : 'view2qty',
                           label: '数量',
+                          labelWidth:'22%',
                           readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
@@ -130,16 +139,17 @@ Ext.define('App699.view.ViewRKQRQX', {
                   ]
               },{
                  xtype: 'container',
-                 margin: '0.5em 0 0 0',
+                 margin: '0 0 0 0',
                  layout: 'hbox',
                  width: '100%',
                  items: [
                      {
-                         margin: '0 0 4px 0',
+                         margin: '0 0 1px 0',
                          id: 'view2vendordesc',
                          xtype: 'textfield',
                          name : 'view2vendordesc',
-                         label: '供应商名字',
+                         label: '供应商',
+                         labelWidth:'22%',
                          readOnly:true,
                          labelCls: 'nn',
                          width: '100%'

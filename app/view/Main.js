@@ -41,20 +41,25 @@
             itemId: 'welcome',
             cls: 'welcome',
             items: [{
+                xtype:'panel',
+                margin: '0 0 0.1em 0',
+                style: '',
+                html: '<span class="maintu"></span>'
+            },{
                 layout: 'hbox',
                 height: '20%',
                 itemId: 'row1',
-                margin: '4% 0 0 0',
+                margin: '5em 0 0 0',
                 items: [
                     {
                         action: '1',
                         id: 'mainbtn1',
                         xtype: 'button',
-                        width: '33%',
+                        width: '33.33%',
                         disabled: true,
                         text: '<span class="mainmenu">入库确认</span>',
                         ui: 'normal',
-                        cls : 'noBorder',
+                        cls : 'noBorder2',
                         iconAlign: 'top',
                         iconCls: 'mc1rn',
                         iconMask : true
@@ -63,26 +68,26 @@
                         action: '2',
                         id: 'mainbtn2',
                         xtype: 'button',
-                        width: '33%',
+                        width: '33.33%',
                         disabled: true,
                         text: '<span class="mainmenu">入库确认取消</span>',
                         ui: 'normal',
-                        cls : 'noBorder',
+                        cls : 'noBorder2',
                         iconAlign: 'top',
-                        iconCls: 'mc1rn',
+                        iconCls: 'mc2rn',
                         iconMask : true
                     },
                     {
                         action: '3',
                         id: 'mainbtn3',
                         xtype: 'button',
-                        width: '33%',
+                        width: '33.33%',
                         disabled: true,
                         text: '<span class="mainmenu">领用出库</span>',
                         ui: 'normal',
-                        cls : 'noBorder',
+                        cls : 'noBorder2',
                         iconAlign: 'top',
-                        iconCls: 'mc2rn',
+                        iconCls: 'mc3rn',
                         iconMask : true
                      }
                        ]
@@ -90,32 +95,32 @@
                   layout: 'hbox',
                   itemId: 'row2',
                   height: '20%',
-                  margin: '1% 0 0 0',
+                  margin: '3.8em 0 0 0',
                   items: [
                         {
                              action: '4',
                              id: 'mainbtn4',
                              xtype: 'button',
-                             width: '33%',
+                             width: '33.33%',
                              disabled: true,
                              text: '<span class="mainmenu">领用出库删除</span>',
                              ui: 'normal',
-                             cls : 'noBorder',
+                             cls : 'noBorder2',
                              iconAlign: 'top',
-                             iconCls: 'mc1rn',
+                             iconCls: 'mc4rn',
                              iconMask : true
                          },
                         {
                            action: '5',
                            id: 'mainbtn5',
                            xtype: 'button',
-                           width: '33%',
+                           width: '33.33%',
                            disabled: true,
                            text: '<span class="mainmenu">余料退库登记</span>',
                            ui: 'normal',
-                           cls : 'noBorder',
+                           cls : 'noBorder2',
                            iconAlign: 'top',
-                           iconCls: 'mc3rn',
+                           iconCls: 'mc5rn',
                            iconMask : true
                         }]
               },{

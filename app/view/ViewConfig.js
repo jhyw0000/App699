@@ -12,7 +12,11 @@ Ext.define('App699.view.ViewConfig', {
         },
 
 		items: [{
-		    margin: '40% 0 0 0',
+		    margin: '6% 0 0 0',
+		    xtype:'component',
+		    html:'<div style="height:2.6em;padding-top:10px;text-align:center;background:#2e5279;font-weight:bold;color:white;">服务配置</div>'
+		},{
+		    margin: '26% 0 0 0',
 			xtype: 'component',
 			html: '输入服务器的IP和PORT,例如：IP:192.168.1.1，PORT:8080'
 		}, {
@@ -20,13 +24,15 @@ Ext.define('App699.view.ViewConfig', {
 			items: [{
 				xtype: 'textfield',
 				id: "ip",
-				value: '192.168.1.110',
-				label: 'IP'
+				value: '10.0.0.29',
+				label: 'IP',
+				labelCls:'labelwhite'
 			},{
 				xtype: 'textfield',
 				id: "port",
-				value: '8088',
-				label: 'PORT'
+				value: '8089',
+				label: 'PORT',
+				labelCls:'labelwhite'
 			}]
 		},{
 		    margin: '10% 0 0 0',

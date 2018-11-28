@@ -13,17 +13,19 @@ Ext.define('App699.view.ViewLYCK', {
         directionLock: true,
 		items: [{
             xtype: 'container',
-            margin: '6% 0 0 0',
+            margin: '1px 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
             items: [
                 {
-                    margin: '0 0 4px 0',
+                    margin: '0 0 1px 0',
                     id: 'view3id',
                     xtype: 'numberfield',
                     name : 'view3id',
                     label: 'ID号',
+                    labelWidth:'22%',
+                    labelCls:'labelwhite',
                     placeHolder : '扫码输入',
                     width: '100%',
                     listeners: {
@@ -68,63 +70,70 @@ Ext.define('App699.view.ViewLYCK', {
             ]
             },{
             xtype: 'container',
-            margin: '0.01em 0 0 0',
+            margin: '0 0 0 0',
             layout: 'hbox',
             width: '100%',
             style: 'background:white;',
             items: [
                 {
-                    margin: '0 0 4px 0',
+                    margin: '0 0 1px 0',
                     id: 'view3itemno',
                     xtype: 'textfield',
                     name : 'view3itemno',
                     label: '物料编码',
+                    labelWidth:'22%',
+                    labelCls:'labelwhite',
                     readOnly:true,
                     width: '100%'
                 }
             ]
             },{
               xtype: 'container',
-              margin: '0.01em 0 0 0',
+              margin: '0 0 0 0',
               layout: 'hbox',
               width: '100%',
               items: [
                   {
-                      margin: '0 0 4px 0',
+                      margin: '0 0 1px 0',
                       id: 'view3itemdesc',
                       xtype: 'textfield',
                       name : 'view3itemdesc',
                       label: '物料说明',
+                      labelWidth:'22%',
+                      labelCls:'labelwhite',
                       readOnly:true,
                       width: '100%'
                   }]
               },{
                   xtype: 'container',
-                  margin: '0.05em 0 0 0',
+                  margin: '0 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
                       {
-                          margin: '0 0 4px 0',
+                          margin: '0 0 1px 0',
                           id: 'view3unitofmeas',
                           xtype: 'textfield',
                           name : 'view3unitofmeas',
                           label: '计量单位',
+                          labelWidth:'22%',
+                          labelCls:'labelwhite',
                           readOnly:true,
                           width: '100%'
                       }]
                },{
                   xtype: 'container',
-                  margin: '0.05em 0 0 0',
+                  margin: '0 0 0 0',
                   layout: 'hbox',
                   width: '100%',
                   items: [
                       {
-                          margin: '0 0 4px 0',
+                          margin: '0 0 1px 0',
                           id: 'view3qty',
                           xtype: 'textfield',
                           name : 'view3qty',
                           label: '数量',
+                          labelWidth:'22%',
                           readOnly:true,
                           labelCls: 'nn',
                           width: '100%'
@@ -132,16 +141,17 @@ Ext.define('App699.view.ViewLYCK', {
                   ]
               },{
                  xtype: 'container',
-                 margin: '0.05em 0 0 0',
+                 margin: '0 0 0 0',
                  layout: 'hbox',
                  width: '100%',
                  items: [
                      {
-                         margin: '0 0 4px 0',
+                         margin: '0 0 1px 0',
                          id: 'view3vendordesc',
                          xtype: 'textfield',
                          name : 'view3vendordesc',
-                         label: '供应商名字',
+                         label: '供应商',
+                         labelWidth:'22%',
                          readOnly:true,
                          labelCls: 'nn',
                          width: '100%'
@@ -149,16 +159,17 @@ Ext.define('App699.view.ViewLYCK', {
                  ]
              },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view3manudate',
                        xtype: 'textfield',
                        name : 'view3manudate',
                        label: '生产日期',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
@@ -166,16 +177,17 @@ Ext.define('App699.view.ViewLYCK', {
                ]
            },{
                xtype: 'container',
-               margin: '0.05em 0 0 0',
+               margin: '0 0 0 0',
                layout: 'hbox',
                width: '100%',
                items: [
                    {
-                       margin: '0 0 4px 0',
+                       margin: '0 0 1px 0',
                        id: 'view3validitydate',
                        xtype: 'textfield',
                        name : 'view3validitydate',
                        label: '有效期',
+                       labelWidth:'22%',
                        readOnly:true,
                        labelCls: 'nn',
                        width: '100%'
@@ -184,10 +196,13 @@ Ext.define('App699.view.ViewLYCK', {
            },{
                xtype: 'selectfield',
                label: '领用部门',
+               labelWidth:'22%',
+               labelCls:'labelwhite',
                id: 'view3outdepartmentdesc',
                name : 'view3outdepartmentdesc',
                layout: 'hbox',
                width: '100%',
+               autoSelect:true,
                displayField: 'departmentDesc',
                valueField: 'departmentCode',
                store: 'departmentStore',
@@ -223,9 +238,11 @@ Ext.define('App699.view.ViewLYCK', {
                    }
                }
            },{
-               margin: '0.1em 0 0 0',
+               margin: '1px 0 0 0',
                xtype: 'selectfield',
                label: '领料人',
+               labelWidth:'22%',
+               labelCls:'labelwhite',
                id: 'view3user',
                name : 'view3user',
                layout: 'hbox',

@@ -15,8 +15,18 @@
     /*border:none !important;*/
     border: 1px solid #e6e6e6;
     background-image:none !important;
-    background: #88ded2 !important;
-    border: #88ded2 !important;
+    background: #2e5279 !important;
+    border: #2e5279 !important;
+    z-index:0;/*控制主界面图标遮盖滑动页问题*/
+}
+.noBorder2{
+    /*background-color:transparent !important;
+    background-color:#fff;*/
+    border-radius:0em;
+    border: 1px solid #eeeeee !important;
+    background-image:none !important;
+    background: #fff !important;
+    /*border: #2e5279 !important;*/
     z-index:0;/*控制主界面图标遮盖滑动页问题*/
 }
 /*主界面主菜单按钮样式*/
@@ -41,7 +51,7 @@
     border-radius:0em;
     /*border:1px solid #e6e6e6;*/
     /*background-image:none !important;*/
-    background: #50d2c2 !important;
+    background: #2e5279 !important;
     font-size: 0.6em;
     font-color:black;
 }
@@ -53,7 +63,7 @@
     border-radius:0em;
     /*border:1px solid #e6e6e6;*/
     /*background-image:none !important;*/
-    background: #50d2c2 !important;
+    background: #2e5279 !important;
     border-left: 1px solid #9a9a9a !important;
     font-size: 0.6em;
     color:black;
@@ -66,34 +76,34 @@
 }
 /*单个按钮的样式*/
 .mc1rn{
-    background:url(../images/main/warrantyclaim.png);
+    background:url(../images/rkqr.png);
     background-size: contain;
     width: 60% !important;
-    height: 2.7em !important;
+    height: 2.8em !important;
 }
 .mc2rn{
-    background:url(../images/main/maintenancecompleted.png);
+    background:url(../images/rkqrqx.png);
     background-size: contain;
     width: 60% !important;
-    height: 2.7em !important;
+    height: 2.8em !important;
 }
 .mc3rn{
-    background:url(../images/main/maintenancereminder.png);
+    background:url(../images/lyck.png);
     background-size: contain;
     width: 60% !important;
-    height: 2.7em !important;
+    height: 2.8em !important;
 }
 .mc4rn{
-    background:url(../images/main/maintenancecomplete.png);
+    background:url(../images/lycksc.png);
     background-size: contain;
     width: 60% !important;
-    height: 2.7em !important;
+    height: 2.8em !important;
 }
 .mc5rn{
-    background:url(../images/main/informationservice.png);
+    background:url(../images/yltkdj.png);
     background-size: contain;
     width: 60% !important;
-    height: 2.7em !important;
+    height: 2.8em !important;
 }
 /*任务派工样式*/
 .rwpg{
@@ -134,6 +144,7 @@
 .nn{
     word-wrap:break-word;
     padding: 0.6em 0 0.6em 0;
+    color:white;
 }
 /*没有计划日期的用红色显示*/
 redrow{
@@ -149,7 +160,7 @@ redrow{
 }
 .x-toolbar-dark {
     background-image: -webkit-linear-gradient(top, #a6b0fd,#a6b0fd 3%,#a6b0fd);
-    background: #88ded2; */
+    background: #2e5279; */
 }
 .x-toolbar-dark.x-docked-top {
     border-bottom-color: #ccc;
@@ -159,18 +170,18 @@ redrow{
 }
 /*主界面图标上下边距，控制美观和字体位置*/
 .x-button .x-button-icon{
-    margin-top: 3px;
+    margin-top: 8px;
     /*margin-bottom: 2px;*/
-    margin-bottom: -4px;
+    margin-bottom: 0px;
 }
 /*修改返回图标颜色*/
 .x-toolbar-dark .x-button, .x-toolbar-dark .x-button.x-button-back:after, .x-toolbar-dark .x-button.x-button-forward:after, .x-toolbar .x-toolbar-dark .x-button, .x-toolbar .x-toolbar-dark .x-button.x-button-back:after, .x-toolbar .x-toolbar-dark .x-button.x-button-forward:after, .x-toolbar-dark .x-field-select .x-component-outer, .x-toolbar-dark .x-field-select .x-component-outer.x-button-back:after, .x-toolbar-dark .x-field-select .x-component-outer.x-button-forward:after, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer.x-button-back:after, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer.x-button-forward:after {
     background-image: -webkit-linear-gradient(top, #a6b0fd,#a6b0fd 3%,#a6b0fd);
-    background: #88ded2;
+    background: #2e5279;
 }
 .x-toolbar-dark .x-button, .x-toolbar .x-toolbar-dark .x-button, .x-toolbar-dark .x-field-select .x-component-outer, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer {
     border: 1px solid #a6b0fd;
-    border: #88ded2;
+    border: #2e5279;
 }
 /*控制所有label字体的样式*/
 .x-form-label span {
@@ -208,13 +219,19 @@ redrow{
 }
 
 .x-innerhtml .logo {
-    /*width: 208px;
-    height: 201px;*/
     width: 118px;
     height: 88px;
     background-image: url(../images/login/logo.png);
     float: left;
 }
+/*登录主界面*/
+.x-innerhtml .maintu {
+    width: 100%;
+    height: 160px;
+    background-image: url(../images/main/tupian.png);
+    float: left;
+}
+
 /*修改自适应问题  一车间小屏*/
 .x-innerhtml .logo2 {
     width: 260px;
@@ -238,7 +255,7 @@ redrow{
 }
 
 .x-component-outer .x-unsized {
-    border-bottom: 3px solid #f2f1f1;
+    border-bottom: 2px solid #f2f1f1;
 }
 
 .x-label-align-left:last-child .x-form-label {
@@ -314,7 +331,7 @@ redrow{
 }
 
 .x-toolbar-dark .x-button.x-button-pressing {
-    background: #88ded2 !important;
+    background: #2e5279 !important;
 }
 /*修改解决列表页面数据宽度不够的问题001001001001*/
 .x-inner.x-scroll-scroller .x-container .x-inner {
@@ -327,8 +344,8 @@ redrow{
 }
 .x-inner.x-scroll-scroller .x-container .x-inner .x-container .x-form-label, .x-inner.x-scroll-scroller .x-container .x-form-label {
     text-align: center;
-    line-height: 2.5em;
-    background: #88ded2;
+    line-height: 2em;
+    background: #2e5279;
     padding: 0;
 }
 
@@ -366,11 +383,11 @@ redrow{
 .x-button.x-button-action, .x-button.x-button-action.x-button-back:after, .x-button.x-button-action.x-button-forward:after, .x-toolbar .x-button.x-button-action, .x-toolbar .x-button.x-button-action.x-button-back:after, .x-toolbar .x-button.x-button-action.x-button-forward:after, .x-button.x-button-action-round, .x-button.x-button-action-round.x-button-back:after, .x-button.x-button-action-round.x-button-forward:after, .x-toolbar .x-button.x-button-action-round, .x-toolbar .x-button.x-button-action-round.x-button-back:after, .x-toolbar .x-button.x-button-action-round.x-button-forward:after, .x-button.x-button-action-small, .x-button.x-button-action-small.x-button-back:after, .x-button.x-button-action-small.x-button-forward:after, .x-toolbar .x-button.x-button-action-small, .x-toolbar .x-button.x-button-action-small.x-button-back:after, .x-toolbar .x-button.x-button-action-small.x-button-forward:after {
     background-image: none;
     background-color: #006bb6;
-    background-image: -webkit-linear-gradient(top, #88ded2,#88ded2 3%,#88ded2);
+    background-image: -webkit-linear-gradient(top, #2e5279,#2e5279 3%,#2e5279);
 }
 /*确定按钮边框颜色*/
 .x-button.x-button-action, .x-toolbar .x-button.x-button-action, .x-button.x-button-action-round, .x-toolbar .x-button.x-button-action-round, .x-button.x-button-action-small, .x-toolbar .x-button.x-button-action-small {
-    border: 1px solid #88ded2;
+    border: 1px solid #2e5279;
 }
 /*item列表选中框的样式*/
 .x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl {
@@ -567,3 +584,13 @@ fontem8 {
 }
 /*#endregion*/
 /*魔狼控件结束*/
+.labelwhite {
+    color:white;
+}
+.x-input-el{
+    padding:.4em;min-height:0.6em;border-width:0;-webkit-appearance:none
+}
+.x-field {
+    min-height: 2em;
+    background: #fff;
+}
