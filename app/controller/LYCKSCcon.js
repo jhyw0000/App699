@@ -36,6 +36,7 @@ Ext.define('App699.controller.LYCKSCcon', {
             params: {
                 id:id.getValue(),
                 empNo:"",
+                logId:app.localStorage.getItem("userName"),
                 type:"DELETE",//调用存储 type表示入库出库确认操作！
                 outStore:""
             },

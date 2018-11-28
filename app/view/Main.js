@@ -10,27 +10,27 @@
         items:[{
            //xtype:'titlebar',
            xtype: 'container',
-           baseCls: 'aaa',
            docked: 'top',
-           //title: 'wenzi',
-           //margin: '2% 2% 0 2%',
-           height: 28,
+           margin: '1% 1% 0 1%',
+           height: 30,
            //html: '<div style="background-color:red;"></div>',
            items: [{
-                   margin: '2% 1% 1% 1%',
-                   style: '',
+                   //margin: '1% 1% 1% 1%',
+                   //style: 'border:1px solid red;',
                    layout:'hbox',
                        items:[{
-                           html:'<span class="logo2 logo3"></span>',
-                           flex:3,
-                           style:''
+                           html:'<span class="logo21 logo3"></span>',
+                           flex:0.5
+                       },{
+                           margin: '0 5% 0 0',
+                           html:'<span style="valign:center;font-size:0.8em;margin-top:6px;">油漆暂存库管理系统</span>',
+                           flex:2
                        },{
                            padding: '',
                            id: 'currUserName',
                            name: 'currUserName',
-                           html:'<span style="valign:center;font-size:0.8em;margin-top:10px;">当前用户：</span>',
-                           flex:2.2,
-                           style:''
+                           html:'<span style="valign:center;font-size:0.8em;margin-top:6px;">当前用户：</span>',
+                           flex:2.5
                        }]
                    }
                ]

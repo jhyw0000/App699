@@ -210,9 +210,9 @@ redrow{
 .x-innerhtml .logo {
     /*width: 208px;
     height: 201px;*/
-    width: 165px;
-    height: 154px;
-    background-image: url(../images/login/logo1n.png);
+    width: 118px;
+    height: 88px;
+    background-image: url(../images/login/logo.png);
     float: left;
 }
 /*修改自适应问题  一车间小屏*/
@@ -222,6 +222,12 @@ redrow{
     /*width: 328px;
     height: 34px;*/
     background-image: url(../images/login/logo2n699.png);
+    float: left;
+}
+.x-innerhtml .logo21 {
+    width: 400px;
+    height: 40px;
+    background-image: url(../images/login/logo.png);
     float: left;
 }
 

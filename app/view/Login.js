@@ -15,8 +15,8 @@ Ext.define('App699.view.Login', {
             items:[{
                 xtype:'panel',
                 margin: '5em 1em 0.5em 1em',
-                style: ''
-                //html: '<span class="logo"></span>'
+                style: '',
+                html: '<span class="logo"></span>'
             },{
                 xtype:'panel',
                 margin: '0 0em 0 0em',
@@ -122,24 +122,16 @@ Ext.define('App699.view.Login', {
                 }
               },{
                 xtype:'button',
-                text: '',
+                text: '登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录',
+                style:"color:white;font-family:Microsoft YaHei;",
                 width: '35%',
                 height: '6%',
                 cls: 'login login1',
                 margin: '0.5em 0 0 0',
                 name: 'pwdlogin'
             },{
-                xtype:'panel',
-                cls: 'or',
-                layout: {
-                    type: 'vbox',
-                    pack:'center',
-                    align: 'center'
-                },
-                margin: '0.5em 0 0 0',
-                html: '<span class="or"></span>'
-            },{
-                text:'',
+                text:'服务配置',
+                style:"color:white;font-family:Microsoft YaHei;",
                 width: '35%',
                 height: '6%',
                 xtype: 'button',
