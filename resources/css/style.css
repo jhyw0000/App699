@@ -170,7 +170,7 @@ redrow{
 }
 /*主界面图标上下边距，控制美观和字体位置*/
 .x-button .x-button-icon{
-    margin-top: 8px;
+    margin-top: 0;
     /*margin-bottom: 2px;*/
     margin-bottom: 0px;
 }
